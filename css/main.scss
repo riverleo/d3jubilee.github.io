@@ -1,0 +1,666 @@
+@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass";
+
+/* Lier, 14. 10. 27. 오전 12:20 ==============================================
+   Tool
+   ========================================================================== */
+
+$border-style: 1px solid #f1f1f1;
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    color: #4d4d4d;
+    font-family: sans-serif;
+}
+
+.middle {
+    display: inline-block;
+
+    .target {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.middle:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    margin-left: -10px;
+    vertical-align: middle;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include background-size(cover);
+}
+
+.icon.blog {
+    width: 22px;
+    height: 22px;
+    @include background-image(url('icon/icon-blog.png'));
+}
+
+.icon.facebook {
+    width: 22px;
+    height: 22px;
+    @include background-image(url('icon/icon-facebook.png'));
+}
+
+.logo-black {
+    width: 65px;
+    height: 27px;
+    @extend .icon;
+    @include background-image(url('icon/logo-black.png'));
+}
+
+.logo-black-full {
+    width: 166px;
+    height: 26px;
+    @extend .icon;
+    @include background-image(url('icon/logo-black-full.png'));
+}
+
+.logo-white {
+    width: 58px;
+    height: 22px;
+    @extend .icon;
+    @include background-image(url('icon/logo-white.png'));
+}
+
+.logo-impact {
+    width: 250px;
+    height: 28px;
+    @extend .icon;
+    @include background-image(url('icon/logo-impact.png'));
+}
+
+.hero {
+    color: #16968a;
+    font-size: 30pt;
+    font-family: 'fira-sans-2', sans-serif;
+    text-transform: capitalize;
+}
+
+/* Lier, 15. 3. 18. 오후 2:19 ==============================================
+   Main Page
+   ========================================================================== */
+
+header.major {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    border-bottom: $border-style;
+    background-color: white;
+    z-index: 1;
+
+    h1 .middle {
+        height: 80px;
+    }
+
+    nav {
+        height: 40px;
+        color: #3d3d3d;
+        font-size: 11pt;
+        font-family: 'open-sans', sans-serif;
+        text-transform: capitalize;
+        text-align: center;
+
+        a:hover {
+            color: #16968a;
+        }
+
+        .internal {
+            li {
+                padding: 0 10px;
+                position: relative;
+                list-style: none;
+                text-align: left;
+
+                menu {
+                    top: 30px;
+                    left: 10px;
+                    opacity: 0;
+                    position: absolute;
+                    border: 1px solid #e4e4e4;
+                    background-color: white;
+
+                    li {
+                        padding: 10px 15px;
+                    }
+                }
+            }
+
+            li:hover {
+                menu {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .external {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            height: 80px;
+            text-align: right;
+
+            .internal li {
+                padding: 0 20px;
+            }
+
+            .external {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+footer.major {
+    color: white;
+    padding: 20px 0;
+    font-size: 11pt;
+    font-family: "open-sans", sans-serif;
+    background-color: #b1b1b1;
+
+    .logo-white {
+        margin-right: 20px;
+    }
+}
+
+main {
+    padding-top: 120px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-left: $border-style;
+    border-right: $border-style;
+    z-index: 0;
+
+    @media (min-width: 768px) {
+        padding-top: 80px;
+    }
+
+    header.spot {
+        background-position: bottom;
+        @include background-size(cover);
+        @include background-image(url('icon/bird.png'));
+
+        .middle {
+            height: 600px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 60pt;
+            font-family: 'fira-sans-2', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        dl {
+            width: 85%;
+            display: inline-block;
+            color: white;
+
+            dt {
+                margin-top: 80px;
+            }
+
+            dd {
+                margin-top: 20px;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    section {
+        background-position: top;
+        @include background-size(contain);
+        @include background-image(url('icon/bg.png'));
+
+        article {
+            width: 100%;
+            padding: 80px 0;
+
+            .middle {
+                height: 100%;
+            }
+
+            h1 {
+                color: #16968a;
+                font-size: 36pt;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            h2 {
+                padding: 0 15%;
+                margin-top: 40px;
+                line-height: 1.4;
+                text-align: left;
+
+                p {
+                    margin-top: 10px !important;
+                }
+
+                @media (min-width: 768px) {
+                    padding: 0;
+                    text-align: center;
+
+                    p {
+                        margin-top: 0 !important;
+                    }
+                }
+            }
+        }
+
+        article.vision {
+            .means {
+                display: inline-block;
+                margin-top: 40px;
+                padding-left: 20px;
+                line-height: 1.6;
+                background-repeat: no-repeat;
+                background-position: left center;
+                @include background-image(url('icon/bracket-before.png'));
+            }
+        }
+
+        article.history {
+            .target {
+                width: 100%;
+            }
+            iframe {
+                margin-top: 50px;
+            }
+        }
+
+        article.areas {
+            dd {
+                font-size: 70%;
+
+                @media (min-width: 768px) {
+                    font-size: 100%;
+                }
+            }
+
+            .illust {
+                height: 100px;
+                margin-top: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                @media (min-width: 768px) {
+                    margin-top: 40px;
+                    height: 140px;
+                }
+            }
+
+            .illust.sprout {
+                @include background-image(url('icon/illust-sprout.png'));
+            }
+
+            .illust.light {
+                @include background-image(url('icon/illust-light.png'));
+            }
+
+            .illust.medic {
+                @include background-image(url('icon/illust-medic.png'));
+            }
+
+            .illust.education {
+                @include background-image(url('icon/illust-education.png'));
+            }
+
+            .illust.solar {
+                @include background-image(url('icon/illust-solar.png'));
+            }
+
+            .illust.money {
+                @include background-image(url('icon/illust-money.png'));
+            }
+
+            .illust.house {
+                @include background-image(url('icon/illust-house.png'));
+            }
+
+            .illust.seed {
+                @include background-image(url('icon/illust-seed.png'));
+            }
+        }
+
+        article.deals {
+            #features {
+                margin-top: 40px;
+                height: 400px;
+
+                .carousel-control {
+                    @include background-image(none);
+                }
+
+                .glyphicon {
+                    color: #74c4b3;
+                    @include text-shadow(none);
+                }
+
+                .cover {
+                    width: 100%;
+                    padding: 0 80px;
+                }
+
+                .detail {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    padding: 50px;
+                    position: absolute;
+                    color: white;
+                    line-height: 1.4;
+                    background-color: #74c4b3;
+                    opacity: 0;
+                    @include scale(0.8);
+                    @include transition(0.2s);
+
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .item:hover .detail {
+                    opacity: 1;
+                    @include scale(1);
+                }
+
+                .middle {
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+/* Lier, 15. 3. 19. 오전 12:28 ==============================================
+   What We Do
+   ========================================================================== */
+
+main#what-we-do {
+    header {
+        margin-top: 40px;
+    }
+
+    article {
+        padding: 0 50px;
+        margin: 100px 0;
+
+        h1 {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+
+        p {
+            padding: 40px 0;
+            line-height: 1.4;
+        }
+
+        button {
+            min-width: 100px;
+            padding: 10px 15px;
+            color: #16968a;
+            font-size: 11pt;
+            text-align: left;
+            border: 1px solid #16968a;
+            background-color: transparent;
+            @include border-radius(0);
+        }
+    }
+
+    @media (min-width: 768px) {
+        article:nth-child(2) {
+            border-left: $border-style;
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            @media screen and (min-width: 768px) {
+                min-width: 860px;
+            }
+
+            .modal-content {
+                padding: 50px;
+                box-shadow: none;
+                border-radius: 0;
+
+                p {
+                    margin-top: 40px;
+                    line-height: 1.4;
+                }
+
+                h2 {
+                    margin-top: 100px;
+                }
+
+                img {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                .name {
+                    font-size: 12pt;
+                }
+
+                .career {
+                    color: #999;
+                    font-size: 10pt;
+                    margin-top: 6px;
+                }
+
+                .process {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+/* Lier, 15. 3. 19. 오전 2:09 ==============================================
+   Team
+   ========================================================================== */
+
+main#team {
+    article {
+        margin: 80px 0;
+        padding: 0 20px;
+        border-right: $border-style;
+
+        header {
+            dl {
+                margin: 100px 0 0 15px;
+
+                dt {
+                    font-size: 18pt;
+                    font-weight: bold;
+                }
+
+                dd {
+                    margin-top: 6px;
+                    font-size: 14pt;
+                    color: #979797;
+                }
+            }
+        }
+
+        .intro {
+            margin-top: 80px;
+
+            p {
+                line-height: 1.4;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/* Lier, 15. 3. 19. 오전 2:39 ==============================================
+   Jobs
+   ========================================================================== */
+
+main#jobs {
+    margin: 80px 0;
+    line-height: 1.4;
+
+    .intro {
+        margin-top: 40px;
+    }
+
+
+    h2 {
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 6px;
+    }
+
+    .warning {
+        margin-top: 80px;
+    }
+
+    address {
+        margin-top: 40px;
+    }
+}
+
+/* Lier, 15. 3. 19. 오전 2:53 ==============================================
+   Portfolio
+   ========================================================================== */
+
+main#portfolio {
+    margin: 80px 0;
+
+    header {
+        h2 {
+            margin-top: 20px;
+        }
+
+        img {
+            margin-top: 40px;
+        }
+    }
+
+    .category {
+        margin-top: 80px;
+
+        dt {
+            font-size: 18pt;
+            font-family: 'fira-sans-2', sans-serif;
+            color: #55ad8a;
+        }
+
+        dd {
+            font-size: 12pt;
+            margin-top: 10px;
+        }
+
+        .team {
+            height: 200px;
+
+            .cover,
+            .detail {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                position: absolute;
+            }
+
+            .cover img {
+                width: 100%;
+                height: 100%;
+                background-color: #f8f8f8;
+            }
+
+            .detail {
+                opacity: 0;
+                position: absolute;
+                background-color: #999;
+                @include transition(0.2s);
+            }
+        }
+
+        .team:hover {
+            .detail {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* Lier, 15. 3. 19. 오전 3:32 ==============================================
+   Contact
+   ========================================================================== */
+
+main#contact {
+    margin: 80px 0;
+    line-height: 1.4;
+
+    header {
+        h1 {
+            margin: 40px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 12px;
+            border: 1px solid #4d4d4d;
+        }
+    }
+
+    address {
+        margin-top: 100px;
+
+        .map {
+            height: 400px;
+        }
+
+        .info {
+            padding: 0 20px;
+            ul {
+                padding: 20px 0;
+                font-size: 10pt;
+                border-bottom: $border-style;
+
+                .title {
+                    font-size: 12pt;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
