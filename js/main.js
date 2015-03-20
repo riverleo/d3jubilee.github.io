@@ -2,6 +2,6 @@
     var header = $('<div></div>').load('header.html'),
         footer = $('<div></div>').load('footer.html');
 
-    $('body').prepend(header);
-    $('body').append(footer);
+    $('main').prepend(header);
+    $('main').append(footer);
 }(jQuery));

@@ -6,21 +6,28 @@
 
 $border-style: 1px solid #f1f1f1;
 
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+main {
+    padding-bottom: 62px;
+    position: relative;
+    min-height: 100%;
+}
+
+body.modal-open {
+    margin-right: 0;
+}
+
 a {
     color: inherit;
 }
 
 a:hover {
     text-decoration: none;
-}
-
-body {
-    color: #4d4d4d;
-    font-family: sans-serif;
-}
-
-body.modal-open {
-    margin-right: 0;
 }
 
 .middle {
@@ -179,6 +186,9 @@ header.major {
 }
 
 footer.major {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     color: white;
     padding: 20px 0;
     font-size: 11pt;
@@ -478,44 +488,44 @@ main#what-we-do {
             border-left: $border-style;
         }
     }
+}
 
-    .modal {
-        .modal-dialog {
-            @media screen and (min-width: 768px) {
-                min-width: 860px;
+.modal {
+    .modal-dialog {
+        @media screen and (min-width: 768px) {
+            min-width: 860px;
+        }
+
+        .modal-content {
+            padding: 50px;
+            box-shadow: none;
+            border-radius: 0;
+
+            p {
+                margin-top: 40px;
+                line-height: 1.4;
             }
 
-            .modal-content {
-                padding: 50px;
-                box-shadow: none;
-                border-radius: 0;
+            h2 {
+                margin-top: 100px;
+            }
 
-                p {
-                    margin-top: 40px;
-                    line-height: 1.4;
-                }
+            img {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            .name {
+                font-size: 12pt;
+            }
 
-                h2 {
-                    margin-top: 100px;
-                }
+            .career {
+                color: #999;
+                font-size: 10pt;
+                margin-top: 6px;
+            }
 
-                img {
-                    margin-top: 20px;
-                    margin-bottom: 10px;
-                }
-                .name {
-                    font-size: 12pt;
-                }
-
-                .career {
-                    color: #999;
-                    font-size: 10pt;
-                    margin-top: 6px;
-                }
-
-                .process {
-                    margin-top: 40px;
-                }
+            .process {
+                margin-top: 40px;
             }
         }
     }
@@ -686,8 +696,8 @@ main#portfolio {
    Contact
    ========================================================================== */
 
-main#contact {
-    margin: 80px 0;
+#contact {
+    margin: 40px auto;
     line-height: 1.4;
 
     header {

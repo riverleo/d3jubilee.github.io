@@ -3,37 +3,45 @@
    Tool
    ========================================================================== */
 /* line 9, main.scss */
-a {
-  color: inherit;
-}
-
-/* line 13, main.scss */
-a:hover {
-  text-decoration: none;
-}
-
-/* line 17, main.scss */
+html,
 body {
-  color: #4d4d4d;
+  height: 100%;
   font-family: sans-serif;
 }
 
-/* line 22, main.scss */
+/* line 15, main.scss */
+main {
+  padding-bottom: 62px;
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 21, main.scss */
 body.modal-open {
   margin-right: 0;
 }
 
-/* line 26, main.scss */
+/* line 25, main.scss */
+a {
+  color: inherit;
+}
+
+/* line 29, main.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 33, main.scss */
 .middle {
   display: inline-block;
 }
-/* line 29, main.scss */
+/* line 36, main.scss */
 .middle .target {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 35, main.scss */
+/* line 42, main.scss */
 .middle:before {
   content: '';
   width: 0;
@@ -43,7 +51,7 @@ body.modal-open {
   vertical-align: middle;
 }
 
-/* line 44, main.scss */
+/* line 51, main.scss */
 .icon, .logo-black, .logo-black-full, .logo-white, .logo-impact {
   position: relative;
   display: inline-block;
@@ -56,49 +64,49 @@ body.modal-open {
   background-size: cover;
 }
 
-/* line 53, main.scss */
+/* line 60, main.scss */
 .icon.blog, .blog.logo-black, .blog.logo-black-full, .blog.logo-white, .blog.logo-impact {
   width: 22px;
   height: 22px;
   background-image: url("icon/icon-blog.png");
 }
 
-/* line 59, main.scss */
+/* line 66, main.scss */
 .icon.facebook, .facebook.logo-black, .facebook.logo-black-full, .facebook.logo-white, .facebook.logo-impact {
   width: 22px;
   height: 22px;
   background-image: url("icon/icon-facebook.png");
 }
 
-/* line 65, main.scss */
+/* line 72, main.scss */
 .logo-black {
   width: 65px;
   height: 27px;
   background-image: url("icon/logo-black.png");
 }
 
-/* line 72, main.scss */
+/* line 79, main.scss */
 .logo-black-full {
   width: 166px;
   height: 26px;
   background-image: url("icon/logo-black-full.png");
 }
 
-/* line 79, main.scss */
+/* line 86, main.scss */
 .logo-white {
   width: 58px;
   height: 22px;
   background-image: url("icon/logo-white.png");
 }
 
-/* line 86, main.scss */
+/* line 93, main.scss */
 .logo-impact {
   width: 250px;
   height: 28px;
   background-image: url("icon/logo-impact.png");
 }
 
-/* line 93, main.scss */
+/* line 100, main.scss */
 .hero {
   color: #16968a;
   font-size: 30pt;
@@ -109,7 +117,7 @@ body.modal-open {
 /* Lier, 15. 3. 18. 오후 2:19 ==============================================
    Main Page
    ========================================================================== */
-/* line 104, main.scss */
+/* line 111, main.scss */
 header.major {
   top: 0;
   left: 0;
@@ -119,11 +127,11 @@ header.major {
   background-color: white;
   z-index: 1;
 }
-/* line 113, main.scss */
+/* line 120, main.scss */
 header.major h1 .middle {
   height: 80px;
 }
-/* line 117, main.scss */
+/* line 124, main.scss */
 header.major nav {
   height: 40px;
   color: #3d3d3d;
@@ -132,18 +140,18 @@ header.major nav {
   text-transform: capitalize;
   text-align: center;
 }
-/* line 125, main.scss */
+/* line 132, main.scss */
 header.major nav a:hover {
   color: #16968a;
 }
-/* line 130, main.scss */
+/* line 137, main.scss */
 header.major nav .internal li {
   padding: 0 10px;
   position: relative;
   list-style: none;
   text-align: left;
 }
-/* line 136, main.scss */
+/* line 143, main.scss */
 header.major nav .internal li menu {
   top: 0px;
   left: 10px;
@@ -151,49 +159,52 @@ header.major nav .internal li menu {
   padding-top: 47px;
   position: absolute;
 }
-/* line 143, main.scss */
+/* line 150, main.scss */
 header.major nav .internal li menu li {
   padding: 10px 15px;
   border: 1px solid #e4e4e4;
   background-color: white;
 }
-/* line 149, main.scss */
+/* line 156, main.scss */
 header.major nav .internal li menu li:last-child {
   border-top: 0;
 }
-/* line 156, main.scss */
+/* line 163, main.scss */
 header.major nav .internal li:hover menu {
   opacity: 1;
 }
-/* line 162, main.scss */
+/* line 169, main.scss */
 header.major nav .external {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 117, main.scss */
+  /* line 124, main.scss */
   header.major nav {
     height: 80px;
     text-align: right;
   }
-  /* line 170, main.scss */
+  /* line 177, main.scss */
   header.major nav .internal li {
     padding: 0 20px;
   }
-  /* line 174, main.scss */
+  /* line 181, main.scss */
   header.major nav .external {
     display: inline-block;
   }
 }
 
-/* line 181, main.scss */
+/* line 188, main.scss */
 footer.major {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   color: white;
   padding: 20px 0;
   font-size: 11pt;
   font-family: "open-sans", sans-serif;
   background-color: #b1b1b1;
 }
-/* line 188, main.scss */
+/* line 198, main.scss */
 footer.major .logo-white {
   margin-right: 20px;
 }
@@ -201,7 +212,7 @@ footer.major .logo-white {
 /* Lier, 15. 3. 20. 오후 2:47 ==============================================
    Index
    ========================================================================== */
-/* line 197, main.scss */
+/* line 207, main.scss */
 main {
   padding-top: 120px;
   padding-left: 0 !important;
@@ -211,12 +222,12 @@ main {
   z-index: 0;
 }
 @media (min-width: 768px) {
-  /* line 197, main.scss */
+  /* line 207, main.scss */
   main {
     padding-top: 80px;
   }
 }
-/* line 209, main.scss */
+/* line 219, main.scss */
 main header.spot {
   background-position: bottom;
   -moz-background-size: cover;
@@ -225,11 +236,11 @@ main header.spot {
   background-size: cover;
   background-image: url("icon/bird.png");
 }
-/* line 214, main.scss */
+/* line 224, main.scss */
 main header.spot .middle {
   height: 600px;
 }
-/* line 218, main.scss */
+/* line 228, main.scss */
 main header.spot h1 {
   color: white;
   font-size: 60pt;
@@ -237,22 +248,22 @@ main header.spot h1 {
   font-style: normal;
   font-weight: 400;
 }
-/* line 226, main.scss */
+/* line 236, main.scss */
 main header.spot dl {
   width: 85%;
   display: inline-block;
   color: white;
 }
-/* line 231, main.scss */
+/* line 241, main.scss */
 main header.spot dl dt {
   margin-top: 80px;
 }
-/* line 235, main.scss */
+/* line 245, main.scss */
 main header.spot dl dd {
   margin-top: 20px;
   line-height: 1.4;
 }
-/* line 242, main.scss */
+/* line 252, main.scss */
 main section {
   background-position: top;
   -moz-background-size: contain;
@@ -261,16 +272,16 @@ main section {
   background-size: contain;
   background-image: url("icon/bg2.png");
 }
-/* line 247, main.scss */
+/* line 257, main.scss */
 main section article {
   width: 100%;
   padding: 80px 0;
 }
-/* line 251, main.scss */
+/* line 261, main.scss */
 main section article .middle {
   height: 100%;
 }
-/* line 255, main.scss */
+/* line 265, main.scss */
 main section article h1 {
   color: #16968a;
   font-size: 36pt;
@@ -278,29 +289,29 @@ main section article h1 {
   font-family: 'fira-sans-2', sans-serif;
   text-transform: capitalize;
 }
-/* line 263, main.scss */
+/* line 273, main.scss */
 main section article h2 {
   padding: 0 15%;
   margin-top: 40px;
   line-height: 1.4;
   text-align: left;
 }
-/* line 269, main.scss */
+/* line 279, main.scss */
 main section article h2 p {
   margin-top: 10px !important;
 }
 @media (min-width: 768px) {
-  /* line 263, main.scss */
+  /* line 273, main.scss */
   main section article h2 {
     padding: 0;
     text-align: center;
   }
-  /* line 277, main.scss */
+  /* line 287, main.scss */
   main section article h2 p {
     margin-top: 0 !important;
   }
 }
-/* line 285, main.scss */
+/* line 295, main.scss */
 main section article.vision .means {
   display: inline-block;
   margin-top: 40px;
@@ -310,19 +321,19 @@ main section article.vision .means {
   background-position: left center;
   background-image: url("icon/bracket-before.png");
 }
-/* line 297, main.scss */
+/* line 307, main.scss */
 main section article.history .target {
   width: 100%;
 }
-/* line 300, main.scss */
+/* line 310, main.scss */
 main section article.history iframe {
   margin-top: 50px;
 }
-/* line 306, main.scss */
+/* line 316, main.scss */
 main section article.areas dd {
   font-size: 10pt;
 }
-/* line 310, main.scss */
+/* line 320, main.scss */
 main section article.areas .illust {
   height: 100px;
   margin-top: 20px;
@@ -330,89 +341,89 @@ main section article.areas .illust {
   background-position: center;
 }
 @media (min-width: 768px) {
-  /* line 310, main.scss */
+  /* line 320, main.scss */
   main section article.areas .illust {
     margin-top: 40px;
     height: 140px;
   }
 }
-/* line 322, main.scss */
+/* line 332, main.scss */
 main section article.areas .illust.sprout {
   background-image: url("icon/area-1.png");
 }
-/* line 326, main.scss */
+/* line 336, main.scss */
 main section article.areas .illust.light {
   background-image: url("icon/area-2.png");
 }
-/* line 330, main.scss */
+/* line 340, main.scss */
 main section article.areas .illust.medic {
   background-image: url("icon/area-3.png");
 }
-/* line 334, main.scss */
+/* line 344, main.scss */
 main section article.areas .illust.education {
   background-image: url("icon/area-4.png");
 }
-/* line 338, main.scss */
+/* line 348, main.scss */
 main section article.areas .illust.solar {
   background-image: url("icon/area-5.png");
 }
-/* line 342, main.scss */
+/* line 352, main.scss */
 main section article.areas .illust.money {
   background-image: url("icon/area-6.png");
 }
-/* line 346, main.scss */
+/* line 356, main.scss */
 main section article.areas .illust.house {
   background-image: url("icon/area-7.png");
 }
-/* line 350, main.scss */
+/* line 360, main.scss */
 main section article.areas .illust.seed {
   background-image: url("icon/area-8.png");
 }
-/* line 356, main.scss */
+/* line 366, main.scss */
 main section article.deals #features {
   margin-top: 40px;
   height: 400px;
   border: 1px solid #74c4b3;
   background-color: white;
 }
-/* line 362, main.scss */
+/* line 372, main.scss */
 main section article.deals #features .carousel-control {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
 }
-/* line 367, main.scss */
+/* line 377, main.scss */
 main section article.deals #features .carousel-control.left {
   background-image: url("icon/arrow-left.png");
 }
-/* line 371, main.scss */
+/* line 381, main.scss */
 main section article.deals #features .carousel-control.right {
   background-image: url("icon/arrow-right.png");
 }
-/* line 375, main.scss */
+/* line 385, main.scss */
 main section article.deals #features .carousel-indicators li {
   border: 1px solid #74c4b3;
 }
-/* line 379, main.scss */
+/* line 389, main.scss */
 main section article.deals #features .carousel-indicators li.active {
   background-color: #74c4b3;
 }
-/* line 383, main.scss */
+/* line 393, main.scss */
 main section article.deals #features .cover,
 main section article.deals #features .detail,
 main section article.deals #features .middle {
   width: 100%;
   height: 400px;
 }
-/* line 389, main.scss */
+/* line 399, main.scss */
 main section article.deals #features .cover {
   padding: 0 80px;
 }
-/* line 392, main.scss */
+/* line 402, main.scss */
 main section article.deals #features .cover .desc {
   line-height: 1.4;
 }
-/* line 397, main.scss */
+/* line 407, main.scss */
 main section article.deals #features .detail {
   top: 0;
   left: 0;
@@ -430,16 +441,16 @@ main section article.deals #features .detail {
   transition: 0.2s;
 }
 @media (min-width: 768px) {
-  /* line 397, main.scss */
+  /* line 407, main.scss */
   main section article.deals #features .detail {
     padding: 80px;
   }
 }
-/* line 414, main.scss */
+/* line 424, main.scss */
 main section article.deals #features .detail p {
   margin-bottom: 10px;
 }
-/* line 419, main.scss */
+/* line 429, main.scss */
 main section article.deals #features .item:hover .detail {
   opacity: 1;
 }
@@ -447,25 +458,25 @@ main section article.deals #features .item:hover .detail {
 /* Lier, 15. 3. 19. 오전 12:28 ==============================================
    What We Do
    ========================================================================== */
-/* line 432, main.scss */
+/* line 442, main.scss */
 main#what-we-do header {
   margin-top: 40px;
 }
-/* line 436, main.scss */
+/* line 446, main.scss */
 main#what-we-do article {
   margin: 100px 0;
 }
-/* line 439, main.scss */
+/* line 449, main.scss */
 main#what-we-do article h1 {
   font-size: 14pt;
   font-weight: bold;
 }
-/* line 444, main.scss */
+/* line 454, main.scss */
 main#what-we-do article p {
   padding: 40px 0;
   line-height: 1.4;
 }
-/* line 449, main.scss */
+/* line 459, main.scss */
 main#what-we-do article button {
   min-width: 100px;
   padding: 10px 15px;
@@ -485,102 +496,103 @@ main#what-we-do article button {
   -webkit-transition: 0.2;
   transition: 0.2;
 }
-/* line 462, main.scss */
+/* line 472, main.scss */
 main#what-we-do article button:hover {
   color: #16968a;
   border: 1px solid #16968a;
 }
-/* line 468, main.scss */
+/* line 478, main.scss */
 main#what-we-do article:nth-child(1) {
   padding-right: 50px;
 }
-/* line 472, main.scss */
+/* line 482, main.scss */
 main#what-we-do article:nth-child(2) {
   padding-left: 50px;
 }
 @media (min-width: 768px) {
-  /* line 477, main.scss */
+  /* line 487, main.scss */
   main#what-we-do article:nth-child(2) {
     border-left: 1px solid #f1f1f1;
   }
 }
+
 @media screen and (min-width: 768px) {
-  /* line 483, main.scss */
-  main#what-we-do .modal .modal-dialog {
+  /* line 494, main.scss */
+  .modal .modal-dialog {
     min-width: 860px;
   }
 }
-/* line 488, main.scss */
-main#what-we-do .modal .modal-dialog .modal-content {
+/* line 499, main.scss */
+.modal .modal-dialog .modal-content {
   padding: 50px;
   box-shadow: none;
   border-radius: 0;
 }
-/* line 493, main.scss */
-main#what-we-do .modal .modal-dialog .modal-content p {
+/* line 504, main.scss */
+.modal .modal-dialog .modal-content p {
   margin-top: 40px;
   line-height: 1.4;
 }
-/* line 498, main.scss */
-main#what-we-do .modal .modal-dialog .modal-content h2 {
+/* line 509, main.scss */
+.modal .modal-dialog .modal-content h2 {
   margin-top: 100px;
 }
-/* line 502, main.scss */
-main#what-we-do .modal .modal-dialog .modal-content img {
+/* line 513, main.scss */
+.modal .modal-dialog .modal-content img {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* line 506, main.scss */
-main#what-we-do .modal .modal-dialog .modal-content .name {
+/* line 517, main.scss */
+.modal .modal-dialog .modal-content .name {
   font-size: 12pt;
 }
-/* line 510, main.scss */
-main#what-we-do .modal .modal-dialog .modal-content .career {
+/* line 521, main.scss */
+.modal .modal-dialog .modal-content .career {
   color: #999;
   font-size: 10pt;
   margin-top: 6px;
 }
-/* line 516, main.scss */
-main#what-we-do .modal .modal-dialog .modal-content .process {
+/* line 527, main.scss */
+.modal .modal-dialog .modal-content .process {
   margin-top: 40px;
 }
 
 /* Lier, 15. 3. 19. 오전 2:09 ==============================================
    Team
    ========================================================================== */
-/* line 529, main.scss */
+/* line 539, main.scss */
 main#team article:first-child {
   padding-right: 50px;
   border-right: 1px solid #f1f1f1;
 }
-/* line 534, main.scss */
+/* line 544, main.scss */
 main#team article:last-child {
   padding-left: 50px;
 }
-/* line 538, main.scss */
+/* line 548, main.scss */
 main#team article {
   margin: 80px 0;
 }
-/* line 542, main.scss */
+/* line 552, main.scss */
 main#team article header dl {
   margin: 100px 0 0 15px;
 }
-/* line 545, main.scss */
+/* line 555, main.scss */
 main#team article header dl dt {
   font-size: 18pt;
   font-weight: bold;
 }
-/* line 550, main.scss */
+/* line 560, main.scss */
 main#team article header dl dd {
   margin-top: 6px;
   font-size: 14pt;
   color: #979797;
 }
-/* line 558, main.scss */
+/* line 568, main.scss */
 main#team article .intro {
   margin-top: 80px;
 }
-/* line 562, main.scss */
+/* line 572, main.scss */
 main#team article .intro p {
   line-height: 1.6;
   font-size: 11pt;
@@ -590,26 +602,26 @@ main#team article .intro p {
 /* Lier, 15. 3. 19. 오전 2:39 ==============================================
    Jobs
    ========================================================================== */
-/* line 575, main.scss */
+/* line 585, main.scss */
 main#jobs {
   margin: 80px 0;
   line-height: 1.4;
 }
-/* line 579, main.scss */
+/* line 589, main.scss */
 main#jobs .intro {
   margin-top: 40px;
 }
-/* line 583, main.scss */
+/* line 593, main.scss */
 main#jobs h2 {
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 6px;
 }
-/* line 589, main.scss */
+/* line 599, main.scss */
 main#jobs .warning {
   margin-top: 80px;
 }
-/* line 593, main.scss */
+/* line 603, main.scss */
 main#jobs address {
   margin-top: 40px;
 }
@@ -617,45 +629,45 @@ main#jobs address {
 /* Lier, 15. 3. 19. 오전 2:53 ==============================================
    Portfolio
    ========================================================================== */
-/* line 602, main.scss */
+/* line 612, main.scss */
 main#portfolio {
   margin: 80px 0;
 }
-/* line 606, main.scss */
+/* line 616, main.scss */
 main#portfolio header h2 {
   margin-top: 20px;
 }
-/* line 610, main.scss */
+/* line 620, main.scss */
 main#portfolio header img {
   margin-top: 40px;
 }
-/* line 615, main.scss */
+/* line 625, main.scss */
 main#portfolio .category {
   margin-top: 80px;
 }
-/* line 618, main.scss */
+/* line 628, main.scss */
 main#portfolio .category dt {
   font-size: 18pt;
   font-family: 'fira-sans-2', sans-serif;
   color: #55ad8a;
 }
-/* line 624, main.scss */
+/* line 634, main.scss */
 main#portfolio .category dd {
   font-size: 12pt;
   margin-top: 10px;
 }
-/* line 629, main.scss */
+/* line 639, main.scss */
 main#portfolio .category .team {
   padding: 20px;
   height: 200px;
 }
-/* line 633, main.scss */
+/* line 643, main.scss */
 main#portfolio .category .team .box {
   width: 100%;
   height: 100%;
   border: 1px solid #f1f1f1;
 }
-/* line 639, main.scss */
+/* line 649, main.scss */
 main#portfolio .category .team .cover,
 main#portfolio .category .team dl {
   top: 0;
@@ -665,7 +677,7 @@ main#portfolio .category .team dl {
   padding: 10px;
   position: absolute;
 }
-/* line 649, main.scss */
+/* line 659, main.scss */
 main#portfolio .category .team .cover {
   width: 100%;
   height: 100%;
@@ -676,7 +688,7 @@ main#portfolio .category .team .cover {
   -webkit-background-size: 60%;
   background-size: 60%;
 }
-/* line 657, main.scss */
+/* line 667, main.scss */
 main#portfolio .category .team dl {
   color: white;
   opacity: 0;
@@ -688,17 +700,17 @@ main#portfolio .category .team dl {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-/* line 665, main.scss */
+/* line 675, main.scss */
 main#portfolio .category .team dl dt {
   color: white;
   font-size: 14pt;
 }
-/* line 670, main.scss */
+/* line 680, main.scss */
 main#portfolio .category .team dl dd {
   font-size: 11pt;
   line-height: 1.4;
 }
-/* line 678, main.scss */
+/* line 688, main.scss */
 main#portfolio .category .team:hover dl {
   opacity: 1;
 }
@@ -706,48 +718,48 @@ main#portfolio .category .team:hover dl {
 /* Lier, 15. 3. 19. 오전 3:32 ==============================================
    Contact
    ========================================================================== */
-/* line 689, main.scss */
-main#contact {
-  margin: 80px 0;
+/* line 699, main.scss */
+#contact {
+  margin: 40px auto;
   line-height: 1.4;
 }
-/* line 694, main.scss */
-main#contact header h1 {
+/* line 704, main.scss */
+#contact header h1 {
   margin: 40px 0;
 }
-/* line 698, main.scss */
-main#contact header a {
+/* line 708, main.scss */
+#contact header a {
   display: inline-block;
   margin-top: 40px;
   padding: 10px 15px;
   color: #4d4d4d;
   border: 1px solid #4d4d4d;
 }
-/* line 706, main.scss */
-main#contact header a:hover {
+/* line 716, main.scss */
+#contact header a:hover {
   color: #16968a;
   border: 1px solid #16968a;
 }
-/* line 712, main.scss */
-main#contact address {
+/* line 722, main.scss */
+#contact address {
   margin-top: 100px;
 }
-/* line 715, main.scss */
-main#contact address .map {
+/* line 725, main.scss */
+#contact address .map {
   height: 400px;
 }
-/* line 719, main.scss */
-main#contact address .info {
+/* line 729, main.scss */
+#contact address .info {
   padding: 0 20px;
 }
-/* line 721, main.scss */
-main#contact address .info ul {
+/* line 731, main.scss */
+#contact address .info ul {
   padding: 20px 0;
   font-size: 10pt;
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 726, main.scss */
-main#contact address .info ul .title {
+/* line 736, main.scss */
+#contact address .info ul .title {
   font-size: 12pt;
 }
 
