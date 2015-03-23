@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" data-ng-app="main">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +10,11 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/screen.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/screen.css"/>
+    <link rel="stylesheet" href="static/css/main.css"/>
 
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="//use.typekit.net/hmi5prq.js"></script>
     <script>try {
         Typekit.load();
@@ -29,6 +29,7 @@
 
 <!-- Add your site or application content here -->
 <main id="jobs">
+    <div data-ng-include="'template/header.html'"></div>
     <div class="container">
         <h1 class="hero">jobs</h1>
         <p class="intro">
@@ -46,7 +47,7 @@
 
             <ul>
                 <li>더 나은 세상을 만들기 위해, 비즈니스와 금융의 새로운 역할을 이해하고 실행력이 있는 사람</li>
-                <li>창업가적인 정신 및  문제해결능력을 갖추고 강도높은 업무를 이겨낼 수 있는 사람</li>
+                <li>창업가적인 정신 및 문제해결능력을 갖추고 강도높은 업무를 이겨낼 수 있는 사람</li>
                 <li>한국어와 영어로 설득력있게 글을 쓰고 의사소통할 수 있는 사람</li>
                 <li>다양한 문화에 대한 이해와 적응력이 있는 사람</li>
                 <li>소프트웨어, 코딩, 영상작업 능력 등 디지털/멀티미디어 툴을 잘 다루는 사람</li>
@@ -60,13 +61,18 @@
             <a href="mailto:jobs@d3jubilee.com">jobs@d3jubilee.com</a>
         </address>
     </div>
+    <div data-ng-include="'template/footer.html'"></div>
 </main>
 
+<script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="static/js/vendor/angular.min.js"></script>
+<script src="static/js/vendor/angular-resource.min.js"></script>
+<script src="static/js/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="static/js/vendor/bootstrap.min.js"></script>
+<script src="static/js/plugins.js"></script>
+<script src="static/js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -87,3 +93,4 @@
 </script>
 </body>
 </html>
+
