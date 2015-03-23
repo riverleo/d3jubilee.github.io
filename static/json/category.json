@@ -51,14 +51,14 @@
                 },
                 {
                     "title": "Labdoor",
-                    "descrition": "영양보충제의 올바른 소비를 위한 과학적 분석 기반의 디지털 리포트",
+                    "description": "영양보충제의 올바른 소비를 위한 과학적 분석 기반의 디지털 리포트",
                     "locale": "미국",
                     "logo": "static/img/portfolio/labdoor.png",
                     "url": "https://labdoor.com/"
                 },
                 {
                     "title": "Sevamob",
-                    "description": "",
+                    "description": "인도의 저소득층 환자를 위한 정기회원제 기반의 방문진료 서비스",
                     "locale": "인도",
                     "logo": "static/img/portfolio/sevamob.png",
                     "url": "http://sevamob.com/"
