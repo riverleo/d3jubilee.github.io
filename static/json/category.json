@@ -132,7 +132,7 @@
                     "title": "Sunfunder",
                     "description": "크라우드 펀딩으로 개발도상국의 off-grid에 태양광발전을 설치해주는 플랫폼",
                     "locale": "탄자니아, 케냐",
-                    "logo": "static/img/portfolio/sunfunder.png",
+                    "logo": "static/img/portfolio/sunfunder.jpg",
                     "url": "http://sunfunder.com/"
                 },
                 {
@@ -235,7 +235,7 @@
                     "url": "http://hitcher.cc/"
                 },
                 {
-                    "title": "그린카(partly exit)",
+                    "title": "그린카",
                     "description": "본인이 필요한 만큼 집 근처에서 예약한 후 사용할 수 있는 카쉐어링",
                     "locale": "한국",
                     "logo": "static/img/portfolio/greencar.png",
@@ -252,7 +252,7 @@
                     "title": "FromDL",
                     "description": "희귀성 질환을 가진 환자와 부모의 소통과 공감을 위한 온라인 커뮤니티",
                     "locale": "한국",
-                    "logo": "",
+                    "logo": "static/img/portfolio/fromdl.jpg",
                     "url": "https://www.fromdl.com/"
                 }
             ]
