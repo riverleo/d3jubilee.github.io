@@ -756,84 +756,88 @@ main#jobs address {
 main#portfolio {
   padding: 80px 0 160px 0;
 }
-/* line 732, main.scss */
-main#portfolio header h2 {
+@media only screen and (max-width: 768px) {
+  /* line 731, main.scss */
+  main#portfolio header.minor {
+    margin-top: 40px;
+  }
+  /* line 735, main.scss */
+  main#portfolio header.minor .hero {
+    font-size: 24pt;
+  }
+}
+/* line 740, main.scss */
+main#portfolio header.minor h2 {
   margin-top: 20px;
 }
-/* line 736, main.scss */
-main#portfolio header img {
+/* line 744, main.scss */
+main#portfolio header.minor img {
   margin-top: 40px;
 }
-/* line 741, main.scss */
+/* line 749, main.scss */
 main#portfolio .category {
   margin-top: 80px;
 }
-/* line 744, main.scss */
-main#portfolio .category dt {
+@media only screen and (max-width: 768px) {
+  /* line 752, main.scss */
+  main#portfolio .category dl.preview {
+    margin-bottom: 20px;
+  }
+}
+/* line 757, main.scss */
+main#portfolio .category dl.preview dt {
   font-size: 18pt;
   font-family: 'fira-sans-2', sans-serif;
   color: #55ad8a;
 }
-/* line 750, main.scss */
-main#portfolio .category dd {
+/* line 763, main.scss */
+main#portfolio .category dl.preview dd {
   font-size: 12pt;
   margin-top: 10px;
 }
-/* line 755, main.scss */
+/* line 769, main.scss */
 main#portfolio .category .team {
-  padding: 20px;
-  height: 200px;
+  padding: 10px;
 }
-/* line 759, main.scss */
+/* line 772, main.scss */
 main#portfolio .category .team .box {
   width: 100%;
   height: 100%;
   border: 1px solid #f1f1f1;
-}
-/* line 765, main.scss */
-main#portfolio .category .team .cover,
-main#portfolio .category .team dl {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  position: absolute;
-}
-/* line 775, main.scss */
-main#portfolio .category .team .cover {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  -moz-background-size: 60%;
-  -o-background-size: 60%;
-  -webkit-background-size: 60%;
-  background-size: 60%;
-}
-/* line 783, main.scss */
-main#portfolio .category .team dl {
-  color: white;
-  opacity: 0;
-  position: absolute;
   padding: 20px;
+  position: relative;
+}
+/* line 779, main.scss */
+main#portfolio .category .team .box dl {
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  padding: 20px;
+  position: absolute;
+  color: white;
   background-color: #999;
+  opacity: 0;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 /* line 791, main.scss */
-main#portfolio .category .team dl dt {
+main#portfolio .category .team .box dl dt {
   color: white;
   font-size: 14pt;
 }
 /* line 796, main.scss */
-main#portfolio .category .team dl dd {
+main#portfolio .category .team .box dl dd {
   font-size: 11pt;
   line-height: 1.4;
 }
-/* line 804, main.scss */
+/* line 803, main.scss */
+main#portfolio .category .team .cover {
+  width: 100%;
+}
+/* line 810, main.scss */
 main#portfolio .category .team:hover dl {
   opacity: 1;
 }
@@ -841,16 +845,16 @@ main#portfolio .category .team:hover dl {
 /* Lier, 15. 3. 19. 오전 3:32 ==============================================
    Contact
    ========================================================================== */
-/* line 816, main.scss */
+/* line 822, main.scss */
 #contact .container {
   padding: 80px auto;
   line-height: 1.4;
 }
-/* line 822, main.scss */
+/* line 828, main.scss */
 #contact header.minor .hero {
   margin: 40px 0;
 }
-/* line 826, main.scss */
+/* line 832, main.scss */
 #contact header.minor a {
   display: inline-block;
   margin-top: 40px;
@@ -858,45 +862,45 @@ main#portfolio .category .team:hover dl {
   color: #4d4d4d;
   border: 1px solid #4d4d4d;
 }
-/* line 834, main.scss */
+/* line 840, main.scss */
 #contact header.minor a:hover {
   color: #16968a;
   border: 1px solid #16968a;
 }
-/* line 839, main.scss */
+/* line 845, main.scss */
 #contact header.minor p {
   margin-bottom: 10px;
 }
-/* line 844, main.scss */
+/* line 850, main.scss */
 #contact address {
   margin-top: 100px;
 }
-/* line 847, main.scss */
+/* line 853, main.scss */
 #contact address .map {
   height: 400px;
 }
-/* line 851, main.scss */
+/* line 857, main.scss */
 #contact address .info {
   padding: 0 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 851, main.scss */
+  /* line 857, main.scss */
   #contact address .info {
     margin-top: 20px;
   }
 }
-/* line 858, main.scss */
+/* line 864, main.scss */
 #contact address .info ul {
   padding: 20px 0;
   font-size: 10pt;
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 863, main.scss */
+/* line 869, main.scss */
 #contact address .info ul .title {
   font-size: 12pt;
 }
 @media only screen and (max-width: 768px) {
-  /* line 858, main.scss */
+  /* line 864, main.scss */
   #contact address .info ul {
     font-size: 12pt;
   }
@@ -905,11 +909,11 @@ main#portfolio .category .team:hover dl {
 /* Lier, 15. 4. 2. 오후 11:10 ==============================================
    Sitemap
    ========================================================================== */
-/* line 879, main.scss */
+/* line 885, main.scss */
 #sitemap {
   text-align: center;
 }
-/* line 882, main.scss */
+/* line 888, main.scss */
 #sitemap a {
   padding: 10px;
   display: inline-block;

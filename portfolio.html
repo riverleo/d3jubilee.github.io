@@ -29,16 +29,16 @@
 
 <!-- Add your site or application content here -->
 <main id="portfolio" data-ng-controller="PortfolioController">
-    <div data-ng-include="'template/header.html'"></div>
+    <div data-ng-include="tpls.header"></div>
     <div class="container">
-        <header>
+        <header class="minor">
             <h1 class="hero text-center">Gap-closing / Diverse / Sustainable</h1>
             <h2 class="text-center">D3는 그동안 주목받지 못한 사람들의 삶을 개선하고 환경을 살리는 기업에 투자합니다.</h2>
             <img src="static/img/portfolio.png" width="100%" alt="포트폴리오"/>
         </header>
         <ul class="category" data-ng-repeat="category in category.results">
-            <li>
-                <dl class="col-sm-3">
+            <li class="clearfix">
+                <dl class="preview col-sm-3">
                     <dt>{{ category.title.en }}</dt>
                     <dd>{{ category.title.ko }}</dd>
                 </dl>
@@ -46,12 +46,11 @@
                     <li class="col-md-3 col-sm-6 col-xs-6 team" data-ng-repeat="company in category.companies">
                         <a data-ng-href="{{ company.url }}" target="_blank">
                             <div class="box">
-                                <div class="cover"
-                                     data-ng-style="{'background-image': 'url(' + company.logo + ')'}"></div>
-                                <dl>
+                                <img data-ng-src="{{ company.logo }}" class="cover"/>
+                                <dl class="detail">
                                     <dt>{{ company.title }}</dt>
                                     <dd>
-                                        <div>{{ company.locale }}</div>
+                                        <div style="margin-bottom: 10px;">{{ company.locale }}</div>
                                         <div>{{ company.description }}</div>
                                     </dd>
                                 </dl>
@@ -62,7 +61,7 @@
             </li>
         </ul>
     </div>
-    <div data-ng-include="'template/footer.html'"></div>
+    <div data-ng-include="tpls.footer"></div>
 </main>
 
 <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
