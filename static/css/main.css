@@ -187,42 +187,43 @@ header.major nav {
   color: #3d3d3d;
   font-size: 11pt;
   font-family: 'open-sans', sans-serif;
+  text-transform: capitalize;
 }
-/* line 187, main.scss */
+/* line 188, main.scss */
 header.major nav a:hover {
   color: #16968a;
 }
-/* line 191, main.scss */
+/* line 192, main.scss */
 header.major nav ul.internal {
   margin-right: 74px;
 }
-/* line 194, main.scss */
+/* line 195, main.scss */
 header.major nav ul.internal li {
   padding: 30px 25px;
   position: relative;
 }
-/* line 198, main.scss */
+/* line 199, main.scss */
 header.major nav ul.internal li .sub-menu {
   top: 68px;
   left: 10px;
   opacity: 0;
   position: absolute;
 }
-/* line 204, main.scss */
+/* line 205, main.scss */
 header.major nav ul.internal li .sub-menu li {
   padding: 10px 15px;
   border: 1px solid #e4e4e4;
   background-color: white;
 }
-/* line 210, main.scss */
+/* line 211, main.scss */
 header.major nav ul.internal li .sub-menu li:last-child {
   border-top: 0;
 }
-/* line 217, main.scss */
+/* line 218, main.scss */
 header.major nav ul.internal li:hover menu {
   opacity: 1;
 }
-/* line 223, main.scss */
+/* line 224, main.scss */
 header.major nav ul.external {
   top: 50%;
   right: 0;
@@ -230,7 +231,7 @@ header.major nav ul.external {
   position: absolute;
 }
 
-/* line 233, main.scss */
+/* line 234, main.scss */
 footer.major {
   width: 100%;
   position: absolute;
@@ -241,16 +242,16 @@ footer.major {
   font-family: "open-sans", sans-serif;
   background-color: #b1b1b1;
 }
-/* line 243, main.scss */
+/* line 244, main.scss */
 footer.major .logo-white {
   margin-right: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 233, main.scss */
+  /* line 234, main.scss */
   footer.major {
     text-align: center;
   }
-  /* line 250, main.scss */
+  /* line 251, main.scss */
   footer.major span {
     width: 100%;
     font-size: 9pt;
@@ -260,7 +261,7 @@ footer.major .logo-white {
 /* Lier, 15. 3. 20. 오후 2:47 ==============================================
    Index
    ========================================================================== */
-/* line 261, main.scss */
+/* line 262, main.scss */
 main {
   padding-top: 76px;
   padding-left: 0 !important;
@@ -270,12 +271,12 @@ main {
   z-index: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 261, main.scss */
+  /* line 262, main.scss */
   main {
     padding-top: 80px;
   }
 }
-/* line 273, main.scss */
+/* line 274, main.scss */
 main header.spot {
   background-position: bottom;
   -moz-background-size: cover;
@@ -284,11 +285,11 @@ main header.spot {
   background-size: cover;
   background-image: url("icon/bird.png");
 }
-/* line 278, main.scss */
+/* line 279, main.scss */
 main header.spot .middle {
   height: 600px;
 }
-/* line 282, main.scss */
+/* line 283, main.scss */
 main header.spot h1 {
   color: white;
   font-size: 60pt;
@@ -297,28 +298,28 @@ main header.spot h1 {
   font-weight: 400;
 }
 @media only screen and (max-width: 768px) {
-  /* line 282, main.scss */
+  /* line 283, main.scss */
   main header.spot h1 {
     font-size: 36pt;
     line-height: 1.4;
   }
 }
-/* line 295, main.scss */
+/* line 296, main.scss */
 main header.spot dl {
   width: 85%;
   display: inline-block;
   color: white;
 }
-/* line 300, main.scss */
+/* line 301, main.scss */
 main header.spot dl dt {
   margin-top: 80px;
 }
-/* line 304, main.scss */
+/* line 305, main.scss */
 main header.spot dl dd {
   margin-top: 20px;
   line-height: 1.4;
 }
-/* line 311, main.scss */
+/* line 312, main.scss */
 main section {
   background-position: top;
   -moz-background-size: contain;
@@ -327,16 +328,16 @@ main section {
   background-size: contain;
   background-image: url("icon/bg2.png");
 }
-/* line 316, main.scss */
+/* line 317, main.scss */
 main section article {
   width: 100%;
   padding: 80px 0;
 }
-/* line 320, main.scss */
+/* line 321, main.scss */
 main section article .middle {
   height: 100%;
 }
-/* line 324, main.scss */
+/* line 325, main.scss */
 main section article h1 {
   color: #16968a;
   font-size: 36pt;
@@ -344,27 +345,27 @@ main section article h1 {
   font-family: 'fira-sans-2', sans-serif;
   text-transform: capitalize;
 }
-/* line 332, main.scss */
+/* line 333, main.scss */
 main section article h2 {
   padding: 0;
   margin-top: 40px;
   text-align: center;
 }
-/* line 337, main.scss */
+/* line 338, main.scss */
 main section article h2 p {
   margin-top: 10px !important;
 }
 @media only screen and (max-width: 768px) {
-  /* line 332, main.scss */
+  /* line 333, main.scss */
   main section article h2 {
     text-align: left;
   }
-  /* line 344, main.scss */
+  /* line 345, main.scss */
   main section article h2 p {
     margin-top: 0;
   }
 }
-/* line 352, main.scss */
+/* line 353, main.scss */
 main section article.vision .means {
   display: inline-block;
   margin-top: 40px;
@@ -374,26 +375,26 @@ main section article.vision .means {
   background-position: left center;
   background-image: url("icon/bracket-before.png");
 }
-/* line 364, main.scss */
+/* line 365, main.scss */
 main section article.history .target {
   width: 100%;
 }
-/* line 367, main.scss */
+/* line 368, main.scss */
 main section article.history iframe {
   margin-top: 50px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 374, main.scss */
+  /* line 375, main.scss */
   main section article.areas dl {
     height: 200px;
   }
 }
-/* line 379, main.scss */
+/* line 380, main.scss */
 main section article.areas dd {
   margin-top: 10px;
   font-size: 10pt;
 }
-/* line 384, main.scss */
+/* line 385, main.scss */
 main section article.areas .illust {
   height: 100px;
   margin-top: 20px;
@@ -402,98 +403,98 @@ main section article.areas .illust {
   background-size: cover;
 }
 @media only screen and (max-width: 768px) {
-  /* line 384, main.scss */
+  /* line 385, main.scss */
   main section article.areas .illust {
     margin-top: 40px;
     height: 100px;
   }
 }
-/* line 397, main.scss */
+/* line 398, main.scss */
 main section article.areas .illust.sprout {
   background-image: url("icon/area-1.svg");
 }
-/* line 401, main.scss */
+/* line 402, main.scss */
 main section article.areas .illust.light {
   background-image: url("icon/area-2.svg");
 }
-/* line 405, main.scss */
+/* line 406, main.scss */
 main section article.areas .illust.medic {
   background-image: url("icon/area-3.svg");
 }
-/* line 409, main.scss */
+/* line 410, main.scss */
 main section article.areas .illust.education {
   background-image: url("icon/area-4.svg");
 }
-/* line 413, main.scss */
+/* line 414, main.scss */
 main section article.areas .illust.solar {
   background-image: url("icon/area-5.svg");
 }
-/* line 417, main.scss */
+/* line 418, main.scss */
 main section article.areas .illust.money {
   background-image: url("icon/area-6.svg");
 }
-/* line 421, main.scss */
+/* line 422, main.scss */
 main section article.areas .illust.house {
   background-image: url("icon/area-7.svg");
 }
-/* line 425, main.scss */
+/* line 426, main.scss */
 main section article.areas .illust.seed {
   background-image: url("icon/area-8.svg");
 }
-/* line 431, main.scss */
+/* line 432, main.scss */
 main section article.deals #features {
   margin-top: 40px;
   height: 400px;
   border: 1px solid #74c4b3;
   background-color: white;
 }
-/* line 437, main.scss */
+/* line 438, main.scss */
 main section article.deals #features .carousel-control {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   opacity: 1;
 }
-/* line 443, main.scss */
+/* line 444, main.scss */
 main section article.deals #features .carousel-control .glyphicon {
   display: none;
 }
-/* line 447, main.scss */
+/* line 448, main.scss */
 main section article.deals #features .carousel-control.left {
   background-image: url("icon/arrow-left.png");
 }
-/* line 451, main.scss */
+/* line 452, main.scss */
 main section article.deals #features .carousel-control.right {
   background-image: url("icon/arrow-right.png");
 }
-/* line 455, main.scss */
+/* line 456, main.scss */
 main section article.deals #features .carousel-indicators li {
   border: 1px solid #74c4b3;
 }
-/* line 459, main.scss */
+/* line 460, main.scss */
 main section article.deals #features .carousel-indicators li.active {
   background-color: #74c4b3;
 }
-/* line 463, main.scss */
+/* line 464, main.scss */
 main section article.deals #features .cover,
 main section article.deals #features .detail,
 main section article.deals #features .middle {
   width: 100%;
   height: 400px;
 }
-/* line 469, main.scss */
+/* line 470, main.scss */
 main section article.deals #features .cover {
   padding: 0 80px;
 }
-/* line 472, main.scss */
+/* line 473, main.scss */
 main section article.deals #features .cover .desc {
   line-height: 1.4;
 }
-/* line 477, main.scss */
+/* line 478, main.scss */
 main section article.deals #features pre {
   background-color: transparent;
 }
-/* line 481, main.scss */
+/* line 482, main.scss */
 main section article.deals #features .detail {
   top: 0;
   left: 0;
@@ -511,16 +512,16 @@ main section article.deals #features .detail {
   transition: 0.2s;
 }
 @media (min-width: 768px) {
-  /* line 481, main.scss */
+  /* line 482, main.scss */
   main section article.deals #features .detail {
     padding: 80px;
   }
 }
-/* line 498, main.scss */
+/* line 499, main.scss */
 main section article.deals #features .detail p {
   margin-bottom: 10px;
 }
-/* line 503, main.scss */
+/* line 504, main.scss */
 main section article.deals #features .item:hover .detail {
   opacity: 1;
 }
@@ -528,33 +529,33 @@ main section article.deals #features .item:hover .detail {
 /* Lier, 15. 3. 19. 오전 12:28 ==============================================
    What We Do
    ========================================================================== */
-/* line 516, main.scss */
+/* line 517, main.scss */
 main#what-we-do header.top {
   margin-top: 40px;
 }
 @media only screen and (min-width: 769px) {
-  /* line 520, main.scss */
+  /* line 521, main.scss */
   main#what-we-do article {
     margin: 100px 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 520, main.scss */
+  /* line 521, main.scss */
   main#what-we-do article {
     padding: 50px 18px;
   }
 }
-/* line 529, main.scss */
+/* line 530, main.scss */
 main#what-we-do article h1 {
   font-size: 14pt;
   font-weight: bold;
 }
-/* line 534, main.scss */
+/* line 535, main.scss */
 main#what-we-do article p {
   padding: 40px 0;
   line-height: 1.4;
 }
-/* line 539, main.scss */
+/* line 540, main.scss */
 main#what-we-do article button {
   min-width: 100px;
   padding: 10px 15px;
@@ -574,69 +575,69 @@ main#what-we-do article button {
   -webkit-transition: 0.2;
   transition: 0.2;
 }
-/* line 552, main.scss */
+/* line 553, main.scss */
 main#what-we-do article button:hover {
   color: #16968a;
   border: 1px solid #16968a;
 }
 @media only screen and (min-width: 769px) {
-  /* line 559, main.scss */
+  /* line 560, main.scss */
   main#what-we-do article:nth-child(1) {
     padding-right: 50px;
   }
-  /* line 563, main.scss */
+  /* line 564, main.scss */
   main#what-we-do article:nth-child(2) {
     padding-left: 50px;
   }
-  /* line 567, main.scss */
+  /* line 568, main.scss */
   main#what-we-do article:nth-child(2) {
     border-left: 1px solid #f1f1f1;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 573, main.scss */
+  /* line 574, main.scss */
   main#what-we-do article:nth-child(2) {
     border-top: 1px solid #f1f1f1;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 580, main.scss */
+  /* line 581, main.scss */
   .modal .modal-dialog {
     min-width: 860px;
   }
 }
-/* line 585, main.scss */
+/* line 586, main.scss */
 .modal .modal-dialog .modal-content {
   padding: 50px;
   box-shadow: none;
   border-radius: 0;
 }
-/* line 590, main.scss */
+/* line 591, main.scss */
 .modal .modal-dialog .modal-content p {
   margin-top: 40px;
   line-height: 1.4;
 }
-/* line 595, main.scss */
+/* line 596, main.scss */
 .modal .modal-dialog .modal-content h2 {
   margin-top: 100px;
 }
-/* line 599, main.scss */
+/* line 600, main.scss */
 .modal .modal-dialog .modal-content img {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* line 603, main.scss */
+/* line 604, main.scss */
 .modal .modal-dialog .modal-content .name {
   font-size: 12pt;
 }
-/* line 607, main.scss */
+/* line 608, main.scss */
 .modal .modal-dialog .modal-content .career {
   color: #999;
   font-size: 10pt;
   margin-top: 6px;
 }
-/* line 613, main.scss */
+/* line 614, main.scss */
 .modal .modal-dialog .modal-content .process {
   margin-top: 40px;
 }
@@ -645,71 +646,71 @@ main#what-we-do article button:hover {
    Team
    ========================================================================== */
 @media only screen and (min-width: 769px) {
-  /* line 626, main.scss */
+  /* line 627, main.scss */
   main#team article:first-child {
     padding-right: 50px;
     border-right: 1px solid #f1f1f1;
   }
-  /* line 631, main.scss */
+  /* line 632, main.scss */
   main#team article:last-child {
     padding-left: 50px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 637, main.scss */
+  /* line 638, main.scss */
   main#team article:last-child {
     border-top: 1px solid #f1f1f1;
   }
 }
-/* line 642, main.scss */
+/* line 643, main.scss */
 main#team article {
   padding: 80px 0;
 }
-/* line 646, main.scss */
+/* line 647, main.scss */
 main#team article header img {
   width: 150px;
   height: 150px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 646, main.scss */
+  /* line 647, main.scss */
   main#team article header img {
     width: 120px;
     height: 120px;
   }
 }
-/* line 655, main.scss */
+/* line 656, main.scss */
 main#team article header dl {
   margin: 100px 0 0 15px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 655, main.scss */
+  /* line 656, main.scss */
   main#team article header dl {
     margin: 70px 0 0 15px;
   }
 }
-/* line 662, main.scss */
+/* line 663, main.scss */
 main#team article header dl dt {
   font-size: 18pt;
   font-weight: bold;
 }
-/* line 667, main.scss */
+/* line 668, main.scss */
 main#team article header dl dd {
   margin-top: 6px;
   font-size: 14pt;
   color: #979797;
 }
-/* line 675, main.scss */
+/* line 676, main.scss */
 main#team article .intro {
   margin-top: 80px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 675, main.scss */
+  /* line 676, main.scss */
   main#team article .intro {
     margin-top: 20px;
     text-align: justify;
   }
 }
-/* line 683, main.scss */
+/* line 684, main.scss */
 main#team article .intro p {
   line-height: 1.6;
   font-size: 11pt;
@@ -719,31 +720,31 @@ main#team article .intro p {
 /* Lier, 15. 3. 19. 오전 2:39 ==============================================
    Jobs
    ========================================================================== */
-/* line 698, main.scss */
+/* line 699, main.scss */
 main#jobs .hero {
   margin-top: 80px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 698, main.scss */
+  /* line 699, main.scss */
   main#jobs .hero {
     margin-top: 40px;
   }
 }
-/* line 704, main.scss */
+/* line 705, main.scss */
 main#jobs .intro {
   margin-top: 40px;
 }
-/* line 708, main.scss */
+/* line 709, main.scss */
 main#jobs h2 {
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 6px;
 }
-/* line 714, main.scss */
+/* line 715, main.scss */
 main#jobs .warning {
   margin-top: 80px;
 }
-/* line 718, main.scss */
+/* line 719, main.scss */
 main#jobs address {
   margin-top: 40px;
 }
@@ -751,45 +752,45 @@ main#jobs address {
 /* Lier, 15. 3. 19. 오전 2:53 ==============================================
    Portfolio
    ========================================================================== */
-/* line 727, main.scss */
+/* line 728, main.scss */
 main#portfolio {
   padding: 80px 0 160px 0;
 }
-/* line 731, main.scss */
+/* line 732, main.scss */
 main#portfolio header h2 {
   margin-top: 20px;
 }
-/* line 735, main.scss */
+/* line 736, main.scss */
 main#portfolio header img {
   margin-top: 40px;
 }
-/* line 740, main.scss */
+/* line 741, main.scss */
 main#portfolio .category {
   margin-top: 80px;
 }
-/* line 743, main.scss */
+/* line 744, main.scss */
 main#portfolio .category dt {
   font-size: 18pt;
   font-family: 'fira-sans-2', sans-serif;
   color: #55ad8a;
 }
-/* line 749, main.scss */
+/* line 750, main.scss */
 main#portfolio .category dd {
   font-size: 12pt;
   margin-top: 10px;
 }
-/* line 754, main.scss */
+/* line 755, main.scss */
 main#portfolio .category .team {
   padding: 20px;
   height: 200px;
 }
-/* line 758, main.scss */
+/* line 759, main.scss */
 main#portfolio .category .team .box {
   width: 100%;
   height: 100%;
   border: 1px solid #f1f1f1;
 }
-/* line 764, main.scss */
+/* line 765, main.scss */
 main#portfolio .category .team .cover,
 main#portfolio .category .team dl {
   top: 0;
@@ -799,7 +800,7 @@ main#portfolio .category .team dl {
   padding: 10px;
   position: absolute;
 }
-/* line 774, main.scss */
+/* line 775, main.scss */
 main#portfolio .category .team .cover {
   width: 100%;
   height: 100%;
@@ -810,7 +811,7 @@ main#portfolio .category .team .cover {
   -webkit-background-size: 60%;
   background-size: 60%;
 }
-/* line 782, main.scss */
+/* line 783, main.scss */
 main#portfolio .category .team dl {
   color: white;
   opacity: 0;
@@ -822,17 +823,17 @@ main#portfolio .category .team dl {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-/* line 790, main.scss */
+/* line 791, main.scss */
 main#portfolio .category .team dl dt {
   color: white;
   font-size: 14pt;
 }
-/* line 795, main.scss */
+/* line 796, main.scss */
 main#portfolio .category .team dl dd {
   font-size: 11pt;
   line-height: 1.4;
 }
-/* line 803, main.scss */
+/* line 804, main.scss */
 main#portfolio .category .team:hover dl {
   opacity: 1;
 }
@@ -840,16 +841,16 @@ main#portfolio .category .team:hover dl {
 /* Lier, 15. 3. 19. 오전 3:32 ==============================================
    Contact
    ========================================================================== */
-/* line 815, main.scss */
+/* line 816, main.scss */
 #contact .container {
   padding: 80px auto;
   line-height: 1.4;
 }
-/* line 821, main.scss */
+/* line 822, main.scss */
 #contact header.minor .hero {
   margin: 40px 0;
 }
-/* line 825, main.scss */
+/* line 826, main.scss */
 #contact header.minor a {
   display: inline-block;
   margin-top: 40px;
@@ -857,45 +858,45 @@ main#portfolio .category .team:hover dl {
   color: #4d4d4d;
   border: 1px solid #4d4d4d;
 }
-/* line 833, main.scss */
+/* line 834, main.scss */
 #contact header.minor a:hover {
   color: #16968a;
   border: 1px solid #16968a;
 }
-/* line 838, main.scss */
+/* line 839, main.scss */
 #contact header.minor p {
   margin-bottom: 10px;
 }
-/* line 843, main.scss */
+/* line 844, main.scss */
 #contact address {
   margin-top: 100px;
 }
-/* line 846, main.scss */
+/* line 847, main.scss */
 #contact address .map {
   height: 400px;
 }
-/* line 850, main.scss */
+/* line 851, main.scss */
 #contact address .info {
   padding: 0 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 850, main.scss */
+  /* line 851, main.scss */
   #contact address .info {
     margin-top: 20px;
   }
 }
-/* line 857, main.scss */
+/* line 858, main.scss */
 #contact address .info ul {
   padding: 20px 0;
   font-size: 10pt;
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 862, main.scss */
+/* line 863, main.scss */
 #contact address .info ul .title {
   font-size: 12pt;
 }
 @media only screen and (max-width: 768px) {
-  /* line 857, main.scss */
+  /* line 858, main.scss */
   #contact address .info ul {
     font-size: 12pt;
   }
@@ -904,11 +905,11 @@ main#portfolio .category .team:hover dl {
 /* Lier, 15. 4. 2. 오후 11:10 ==============================================
    Sitemap
    ========================================================================== */
-/* line 878, main.scss */
+/* line 879, main.scss */
 #sitemap {
   text-align: center;
 }
-/* line 881, main.scss */
+/* line 882, main.scss */
 #sitemap a {
   padding: 10px;
   display: inline-block;
