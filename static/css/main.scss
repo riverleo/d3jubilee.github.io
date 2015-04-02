@@ -1,15 +1,33 @@
 @import "compass";
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+/* Lier, 15. 4. 2. 오후 9:50 ==============================================
+   Variables
+   ========================================================================== */
+
+$break-small: 768px;
+$border-style: 1px solid #f1f1f1;
+
+@mixin respond-to($media) {
+    @if $media == mobile {
+        @media only screen and (max-width: $break-small) {
+            @content;
+        }
+    } @else if $media == desktop {
+        @media only screen and (min-width: $break-small + 1) {
+            @content;
+        }
+    }
+}
+
 /* Lier, 14. 10. 27. 오전 12:20 ==============================================
    Tool
    ========================================================================== */
 
-$border-style: 1px solid #f1f1f1;
-
 html,
 body {
     height: 100%;
+    line-height: 1.4;
     font-family: 'Apple SD Gothic Neo', 'Nanum Gothic', serif;
 }
 
@@ -23,12 +41,20 @@ body.modal-open {
     margin-right: 0;
 }
 
+button {
+    outline: none;
+}
+
 a {
     color: inherit;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+.container {
+    position: relative;
 }
 
 .middle {
@@ -74,28 +100,28 @@ a:hover {
     width: 65px;
     height: 27px;
     @extend .icon;
-    @include background-image(url('icon/logo-black.png'));
+    @include background-image(url('icon/logo-black.svg'));
 }
 
 .logo-black-full {
     width: 166px;
     height: 26px;
     @extend .icon;
-    @include background-image(url('icon/logo-black-full.png'));
+    @include background-image(url('icon/logo-black-full.svg'));
 }
 
 .logo-white {
     width: 58px;
     height: 22px;
     @extend .icon;
-    @include background-image(url('icon/logo-white.png'));
+    @include background-image(url('icon/logo-white.svg'));
 }
 
 .logo-impact {
     width: 250px;
     height: 28px;
     @extend .icon;
-    @include background-image(url('icon/logo-impact.png'));
+    @include background-image(url('icon/logo-impact.svg'));
 }
 
 .hero {
@@ -118,34 +144,61 @@ header.major {
     background-color: white;
     z-index: 1;
 
-    h1 .middle {
+    @include respond-to(desktop) {
+        h1 {
+            top: 50%;
+            margin-top: -14px;
+            position: absolute;
+        }
+    }
+
+    @include respond-to(mobile) {
         height: 80px;
+
+        h1,
+        nav {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            @include display-flex();
+            @include align-items(center);
+            @include justify-content(center);
+        }
+
+        nav {
+            margin-right: 16px;
+            @include justify-content(flex-end);
+
+            .glyphicon-menu-hamburger {
+                color: #3d3d3d;
+                font-size: 23px;
+            }
+        }
+
     }
 
     nav {
-        height: 40px;
         color: #3d3d3d;
         font-size: 11pt;
         font-family: 'open-sans', sans-serif;
-        text-transform: capitalize;
-        text-align: center;
 
         a:hover {
             color: #16968a;
         }
 
-        .internal {
-            li {
-                padding: 0 10px;
-                position: relative;
-                list-style: none;
-                text-align: left;
+        ul.internal {
+            margin-right: 74px;
 
-                menu {
-                    top: 0px;
+            li {
+                padding: 30px 25px;
+                position: relative;
+
+                .sub-menu {
+                    top: 68px;
                     left: 10px;
                     opacity: 0;
-                    padding-top: 47px;
                     position: absolute;
 
                     li {
@@ -167,21 +220,12 @@ header.major {
             }
         }
 
-        .external {
-            display: none;
-        }
+        ul.external {
+            top: 50%;
+            right: 0;
+            margin-top: -11px;
+            position: absolute;
 
-        @media (min-width: 768px) {
-            height: 80px;
-            text-align: right;
-
-            .internal li {
-                padding: 0 20px;
-            }
-
-            .external {
-                display: inline-block;
-            }
         }
     }
 }
@@ -199,6 +243,15 @@ footer.major {
     .logo-white {
         margin-right: 20px;
     }
+
+    @include respond-to(mobile) {
+        text-align: center;
+
+        span {
+            width: 100%;
+            font-size: 9pt;
+        }
+    }
 }
 
 /* Lier, 15. 3. 20. 오후 2:47 ==============================================
@@ -206,14 +259,14 @@ footer.major {
    ========================================================================== */
 
 main {
-    padding-top: 120px;
+    padding-top: 76px;
     padding-left: 0 !important;
     padding-right: 0 !important;
     border-left: $border-style;
     border-right: $border-style;
     z-index: 0;
 
-    @media (min-width: 768px) {
+    @include respond-to(mobile) {
         padding-top: 80px;
     }
 
@@ -232,6 +285,11 @@ main {
             font-family: 'fira-sans-2', sans-serif;
             font-style: normal;
             font-weight: 400;
+
+            @include respond-to(mobile) {
+                font-size: 36pt;
+                line-height: 1.4;
+            }
         }
 
         dl {
@@ -272,21 +330,19 @@ main {
             }
 
             h2 {
-                padding: 0 15%;
+                padding: 0;
                 margin-top: 40px;
-                line-height: 1.4;
-                text-align: left;
+                text-align: center;
 
                 p {
                     margin-top: 10px !important;
                 }
 
-                @media (min-width: 768px) {
-                    padding: 0;
-                    text-align: center;
+                @include respond-to(mobile) {
+                    text-align: left;
 
                     p {
-                        margin-top: 0 !important;
+                        margin-top: 0;
                     }
                 }
             }
@@ -314,7 +370,14 @@ main {
         }
 
         article.areas {
+            @include respond-to(mobile) {
+                dl {
+                    height: 200px;
+                }
+            }
+
             dd {
+                margin-top: 10px;
                 font-size: 10pt;
             }
 
@@ -323,43 +386,44 @@ main {
                 margin-top: 20px;
                 background-repeat: no-repeat;
                 background-position: center;
+                background-size: cover;
 
-                @media (min-width: 768px) {
+                @include respond-to(mobile) {
                     margin-top: 40px;
-                    height: 140px;
+                    height: 100px;
                 }
             }
 
             .illust.sprout {
-                @include background-image(url('icon/area-1.png'));
+                @include background-image(url('icon/area-1.svg'));
             }
 
             .illust.light {
-                @include background-image(url('icon/area-2.png'));
+                @include background-image(url('icon/area-2.svg'));
             }
 
             .illust.medic {
-                @include background-image(url('icon/area-3.png'));
+                @include background-image(url('icon/area-3.svg'));
             }
 
             .illust.education {
-                @include background-image(url('icon/area-4.png'));
+                @include background-image(url('icon/area-4.svg'));
             }
 
             .illust.solar {
-                @include background-image(url('icon/area-5.png'));
+                @include background-image(url('icon/area-5.svg'));
             }
 
             .illust.money {
-                @include background-image(url('icon/area-6.png'));
+                @include background-image(url('icon/area-6.svg'));
             }
 
             .illust.house {
-                @include background-image(url('icon/area-7.png'));
+                @include background-image(url('icon/area-7.svg'));
             }
 
             .illust.seed {
-                @include background-image(url('icon/area-8.png'));
+                @include background-image(url('icon/area-8.svg'));
             }
         }
 
@@ -454,7 +518,13 @@ main#what-we-do {
     }
 
     article {
-        margin: 100px 0;
+        @include respond-to(desktop) {
+            margin: 100px 0;
+        }
+
+        @include respond-to(mobile) {
+            padding: 50px 18px;
+        }
 
         h1 {
             font-size: 14pt;
@@ -485,17 +555,23 @@ main#what-we-do {
         }
     }
 
-    article:nth-child(1) {
-        padding-right: 50px;
-    }
+    @include respond-to(desktop) {
+        article:nth-child(1) {
+            padding-right: 50px;
+        }
 
-    article:nth-child(2) {
-        padding-left: 50px;
-    }
+        article:nth-child(2) {
+            padding-left: 50px;
+        }
 
-    @media (min-width: 768px) {
         article:nth-child(2) {
             border-left: $border-style;
+        }
+    }
+
+    @include respond-to(mobile) {
+        article:nth-child(2) {
+            border-top: $border-style;
         }
     }
 }
@@ -546,21 +622,42 @@ main#what-we-do {
    ========================================================================== */
 
 main#team {
-    article:first-child {
-        padding-right: 50px;
-        border-right: $border-style;
+    @include respond-to(desktop) {
+        article:first-child {
+            padding-right: 50px;
+            border-right: $border-style;
+        }
+
+        article:last-child {
+            padding-left: 50px;
+        }
     }
 
-    article:last-child {
-        padding-left: 50px;
+    @include respond-to(mobile) {
+        article:last-child {
+            border-top: $border-style;
+        }
     }
 
     article {
-        margin: 80px 0;
+        padding: 80px 0;
 
         header {
+            img {
+                width: 150px;
+                height: 150px;
+                @include respond-to(mobile) {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
             dl {
                 margin: 100px 0 0 15px;
+
+                @include respond-to(mobile) {
+                    margin: 70px 0 0 15px;
+                }
 
                 dt {
                     font-size: 18pt;
@@ -576,8 +673,12 @@ main#team {
         }
 
         .intro {
-
             margin-top: 80px;
+
+            @include respond-to(mobile) {
+                margin-top: 20px;
+                text-align: justify;
+            }
 
             p {
                 line-height: 1.6;
@@ -593,9 +694,13 @@ main#team {
    ========================================================================== */
 
 main#jobs {
-    margin: 80px 0;
-    line-height: 1.4;
 
+    .hero {
+        margin-top: 80px;
+        @include respond-to(mobile) {
+            margin-top: 40px;
+        }
+    }
     .intro {
         margin-top: 40px;
     }
@@ -706,12 +811,14 @@ main#portfolio {
    Contact
    ========================================================================== */
 
-#contact .container {
-    padding: 80px auto;
-    line-height: 1.4;
+#contact {
+    .container {
+        padding: 80px auto;
+        line-height: 1.4;
+    }
 
-    header {
-        h1 {
+    header.minor {
+        .hero {
             margin: 40px 0;
         }
 
@@ -727,6 +834,10 @@ main#portfolio {
             color: #16968a;
             border: 1px solid #16968a;
         }
+
+        p {
+            margin-bottom: 10px;
+        }
     }
 
     address {
@@ -738,6 +849,11 @@ main#portfolio {
 
         .info {
             padding: 0 20px;
+
+            @include respond-to(mobile) {
+                margin-top: 20px;
+            }
+
             ul {
                 padding: 20px 0;
                 font-size: 10pt;
@@ -746,8 +862,28 @@ main#portfolio {
                 .title {
                     font-size: 12pt;
                 }
+
+                @include respond-to(mobile) {
+                    font-size: 12pt;
+                }
             }
         }
+    }
+}
+
+/* Lier, 15. 4. 2. 오후 11:10 ==============================================
+   Sitemap
+   ========================================================================== */
+
+#sitemap {
+    text-align: center;
+
+    a {
+        padding: 10px;
+        display: inline-block;
+        color: #3d3d3d;
+        font-size: 21px;
+        font-family: 'open-sans', sans-serif;
     }
 }
 

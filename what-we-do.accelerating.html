@@ -28,9 +28,9 @@
 
 <!-- Add your site or application content here -->
 <main id="what-we-do">
-    <div data-ng-include="'template/header.html'"></div>
+    <div data-ng-include="tpls.header"></div>
     <div class="container">
-        <header class="top">
+        <header class="top visible-sm visible-md visible-lg">
             <img src="static/img/accelerate.png" alt="accelerate" width="100%"/>
         </header>
         <div class="row">
@@ -45,16 +45,16 @@
                     투자자들에게 피칭할 수 있는 기회를 제공합니다.
                 </p>
 
-                <!--<button class="btn btn-primary btn-lg">-->
-                    <!--D3 Impact Engine 운영진/멘토 소개-->
-                <!--</button>-->
-                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#d3-plus">
+                <button class="btn btn-primary btn-lg" onclick="alert('현재 준비중입니다.')">
                 D3 Impact Engine 운영진/멘토 소개
                 </button>
+                <!--<button class="btn btn-primary btn-lg visible-sm visible-md visible-lg" data-toggle="modal" data-target="#d3-plus">-->
+                    <!--D3 Impact Engine 운영진/멘토 소개-->
+                <!--</button>-->
             </article>
         </div>
     </div>
-    <div data-ng-include="'template/footer.html'"></div>
+    <div data-ng-include="tpls.footer"></div>
 </main>
 
 <!--Modal-->

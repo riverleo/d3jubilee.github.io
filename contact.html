@@ -26,6 +26,7 @@
         function initialize() {
             var mapOptions = {
                 zoom: 16,
+                draggable: false,
                 center: new google.maps.LatLng(37.507938, 127.045097)
             };
             var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -50,9 +51,9 @@
 
 <!-- Add your site or application content here -->
 <main id="contact">
-    <div data-ng-include="'template/header.html'"></div>
+    <div data-ng-include="tpls.header"></div>
     <div class="container">
-        <header>
+        <header class="minor">
             <h1 class="hero">contact</h1>
             <p>
                 저희는 수시로 투자를 검토합니다. 펀딩을 원하는 기업은 아래 이메일로 소개자료를 보내주시면 가능한 빨리 연락 드리겠습니다.
@@ -63,9 +64,7 @@
             <a href="mailto:hr@d3jubilee.com">이메일 보내기</a>
         </header>
         <address class="row">
-            <div id="map-canvas" class="map col-sm-8">
-                map
-            </div>
+            <div id="map-canvas" class="map col-sm-8"></div>
             <div class="info col-sm-4">
                 <h1 class="hero">info</h1>
                 <ul>
@@ -85,7 +84,7 @@
             </div>
         </address>
     </div>
-    <div data-ng-include="'template/footer.html'"></div>
+    <div data-ng-include="tpls.footer"></div>
 </main>
 
 <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>

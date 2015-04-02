@@ -28,13 +28,13 @@
 
 <!-- Add your site or application content here -->
 <main id="what-we-do">
-    <div data-ng-include="'template/header.html'"></div>
+    <div data-ng-include="tpls.header"></div>
     <div class="container">
-        <header class="top">
+        <header class="top visible-md visible-sm visible-lg">
             <img src="static/img/invest.png" alt="invest" width="100%"/>
         </header>
         <div class="row">
-            <article class="col-sm-6">
+            <article class="col-xs-12 col-sm-6">
                 <h1>국내</h1>
                 <p>
                     D3가 직접 투자하거나 D3+ 임팩트투자자 클럽 회원이 투자합니다.
@@ -42,9 +42,9 @@
                     국내외 멘토를 연결하고 성장을 돕습니다.
                 </p>
 
-                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#d3-plus">D3+</button>
+                <button class="btn btn-primary btn-lg visible-sm visible-md visible-lg" data-toggle="modal" data-target="#d3-plus">D3+</button>
             </article>
-            <article class="col-sm-6">
+            <article class="col-xs-12 col-sm-6">
                 <h1>해외</h1>
                 <p>
                     <!--D3 미국법인이 직접 투자하거나 별도의 법인을 통하여 투자합니다.-->
@@ -54,7 +54,7 @@
             </article>
         </div>
     </div>
-    <div data-ng-include="'template/footer.html'"></div>
+    <div data-ng-include="tpls.footer"></div>
 </main>
 
 <!--Modal-->
@@ -71,9 +71,9 @@
             <div class="text-center">
                 <img src="static/img/d3+.png" alt="D3+ 투자클럽 가입 절차" width="90%"/>
                 <div class="process row text-center">
-                    <div class="col-sm-4 col-xs-4">1. 엔젤투자지원센터 회원가입</div>
-                    <div class="col-sm-4 col-xs-4">2. D3+ 임팩트투자클럽 회원가입</div>
-                    <div class="col-sm-4 col-xs-4">3. 가입 승인 / 연회비 납부</div>
+                    <div class="col-sm-4 col-xs-12">1. 엔젤투자지원센터 회원가입</div>
+                    <div class="col-sm-4 col-xs-12">2. D3+ 임팩트투자클럽 회원가입</div>
+                    <div class="col-sm-4 col-xs-12">3. 가입 승인 / 연회비 납부</div>
                 </div>
             </div>
         </div>

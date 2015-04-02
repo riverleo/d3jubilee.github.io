@@ -2,6 +2,16 @@
     'use strict';
 
     angular.module('main', ['ui.bootstrap', 'ngResource'])
+        .directive('main', function () {
+            return {
+                restrict: 'E',
+                controller: function ($scope) {
+                    $scope.tpls = {};
+                    $scope.tpls.header = 'template/header.tpl.html';
+                    $scope.tpls.footer = 'template/footer.tpl.html';
+                }
+            }
+        })
         .controller('HomeController', function ($scope, $resource) {
             $scope.features = $resource('static/json/feature.json').get();
         })
