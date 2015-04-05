@@ -120,7 +120,7 @@
                 </div>
             </article>
             <article class="deals clearfix">
-                <div class="col-sm-8 col-sm-push-2">
+                <div class="carousel-wrap">
                     <h1>featured deals</h1>
                     <div class="visible-xs">
                         <dl data-ng-repeat="feature in features.results" style="margin-top: 60px">
@@ -132,7 +132,7 @@
                             <dd style="margin-top: 40px;">{{ feature.title }}</dd>
                         </dl>
                     </div>
-                    <div data-carousel id="features" interval="5000" class="visible-sm visible-md visible-lg">
+                    <div data-carousel id="features" interval="5000000000" class="visible-sm visible-md visible-lg">
                         <div data-slide data-ng-repeat="feature in features.results" active="slide.active">
                             <div class="cover">
                                 <div class="image text-center col-sm-6 col-xs-6">

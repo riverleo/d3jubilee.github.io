@@ -429,6 +429,11 @@ main {
         }
 
         article.deals {
+            .carousel-wrap {
+                max-width: 752px;
+                margin: 0 auto;
+            }
+
             #features {
                 margin-top: 40px;
                 height: 400px;
