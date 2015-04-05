@@ -694,10 +694,10 @@ main#team {
    Jobs
    ========================================================================== */
 
-main#jobs {
+#jobs {
+    padding: 80px 0 160px 0;
 
     .hero {
-        margin-top: 80px;
         @include respond-to(mobile) {
             margin-top: 40px;
         }
@@ -725,13 +725,13 @@ main#jobs {
    Portfolio
    ========================================================================== */
 
-main#portfolio {
+#portfolio {
     padding: 80px 0 160px 0;
 
     header.minor {
-        @include respond-to(mobile) {
-            margin-top: 40px;
+        margin-top: 40px;
 
+        @include respond-to(mobile) {
             .hero {
                 font-size: 24pt;
             }
@@ -819,10 +819,7 @@ main#portfolio {
    ========================================================================== */
 
 #contact {
-    .container {
-        padding: 80px auto;
-        line-height: 1.4;
-    }
+    padding: 80px 0 160px 0;
 
     header.minor {
         .hero {

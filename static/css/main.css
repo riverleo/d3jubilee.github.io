@@ -720,32 +720,32 @@ main#team article .intro p {
 /* Lier, 15. 3. 19. 오전 2:39 ==============================================
    Jobs
    ========================================================================== */
-/* line 699, main.scss */
-main#jobs .hero {
-  margin-top: 80px;
+/* line 697, main.scss */
+#jobs {
+  padding: 80px 0 160px 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 699, main.scss */
-  main#jobs .hero {
+  /* line 700, main.scss */
+  #jobs .hero {
     margin-top: 40px;
   }
 }
 /* line 705, main.scss */
-main#jobs .intro {
+#jobs .intro {
   margin-top: 40px;
 }
 /* line 709, main.scss */
-main#jobs h2 {
+#jobs h2 {
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 6px;
 }
 /* line 715, main.scss */
-main#jobs .warning {
+#jobs .warning {
   margin-top: 80px;
 }
 /* line 719, main.scss */
-main#jobs address {
+#jobs address {
   margin-top: 40px;
 }
 
@@ -753,54 +753,54 @@ main#jobs address {
    Portfolio
    ========================================================================== */
 /* line 728, main.scss */
-main#portfolio {
+#portfolio {
   padding: 80px 0 160px 0;
 }
+/* line 731, main.scss */
+#portfolio header.minor {
+  margin-top: 40px;
+}
 @media only screen and (max-width: 768px) {
-  /* line 731, main.scss */
-  main#portfolio header.minor {
-    margin-top: 40px;
-  }
   /* line 735, main.scss */
-  main#portfolio header.minor .hero {
+  #portfolio header.minor .hero {
     font-size: 24pt;
   }
 }
 /* line 740, main.scss */
-main#portfolio header.minor h2 {
+#portfolio header.minor h2 {
   margin-top: 20px;
 }
 /* line 744, main.scss */
-main#portfolio header.minor img {
+#portfolio header.minor img {
   margin-top: 40px;
 }
 /* line 749, main.scss */
-main#portfolio .category {
+#portfolio .category {
   margin-top: 80px;
 }
 @media only screen and (max-width: 768px) {
   /* line 752, main.scss */
-  main#portfolio .category dl.preview {
+  #portfolio .category dl.preview {
     margin-bottom: 20px;
   }
 }
 /* line 757, main.scss */
-main#portfolio .category dl.preview dt {
+#portfolio .category dl.preview dt {
   font-size: 18pt;
   font-family: 'fira-sans-2', sans-serif;
   color: #55ad8a;
 }
 /* line 763, main.scss */
-main#portfolio .category dl.preview dd {
+#portfolio .category dl.preview dd {
   font-size: 12pt;
   margin-top: 10px;
 }
 /* line 769, main.scss */
-main#portfolio .category .team {
+#portfolio .category .team {
   padding: 10px;
 }
 /* line 772, main.scss */
-main#portfolio .category .team .box {
+#portfolio .category .team .box {
   width: 100%;
   height: 100%;
   border: 1px solid #f1f1f1;
@@ -808,7 +808,7 @@ main#portfolio .category .team .box {
   position: relative;
 }
 /* line 779, main.scss */
-main#portfolio .category .team .box dl {
+#portfolio .category .team .box dl {
   top: -10px;
   left: -10px;
   right: -10px;
@@ -824,37 +824,36 @@ main#portfolio .category .team .box dl {
   transition: 0.2s;
 }
 /* line 791, main.scss */
-main#portfolio .category .team .box dl dt {
+#portfolio .category .team .box dl dt {
   color: white;
   font-size: 14pt;
 }
 /* line 796, main.scss */
-main#portfolio .category .team .box dl dd {
+#portfolio .category .team .box dl dd {
   font-size: 11pt;
   line-height: 1.4;
 }
 /* line 803, main.scss */
-main#portfolio .category .team .cover {
+#portfolio .category .team .cover {
   width: 100%;
 }
 /* line 810, main.scss */
-main#portfolio .category .team:hover dl {
+#portfolio .category .team:hover dl {
   opacity: 1;
 }
 
 /* Lier, 15. 3. 19. 오전 3:32 ==============================================
    Contact
    ========================================================================== */
-/* line 822, main.scss */
-#contact .container {
-  padding: 80px auto;
-  line-height: 1.4;
+/* line 821, main.scss */
+#contact {
+  padding: 80px 0 160px 0;
 }
-/* line 828, main.scss */
+/* line 825, main.scss */
 #contact header.minor .hero {
   margin: 40px 0;
 }
-/* line 832, main.scss */
+/* line 829, main.scss */
 #contact header.minor a {
   display: inline-block;
   margin-top: 40px;
@@ -862,45 +861,45 @@ main#portfolio .category .team:hover dl {
   color: #4d4d4d;
   border: 1px solid #4d4d4d;
 }
-/* line 840, main.scss */
+/* line 837, main.scss */
 #contact header.minor a:hover {
   color: #16968a;
   border: 1px solid #16968a;
 }
-/* line 845, main.scss */
+/* line 842, main.scss */
 #contact header.minor p {
   margin-bottom: 10px;
 }
-/* line 850, main.scss */
+/* line 847, main.scss */
 #contact address {
   margin-top: 100px;
 }
-/* line 853, main.scss */
+/* line 850, main.scss */
 #contact address .map {
   height: 400px;
 }
-/* line 857, main.scss */
+/* line 854, main.scss */
 #contact address .info {
   padding: 0 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 857, main.scss */
+  /* line 854, main.scss */
   #contact address .info {
     margin-top: 20px;
   }
 }
-/* line 864, main.scss */
+/* line 861, main.scss */
 #contact address .info ul {
   padding: 20px 0;
   font-size: 10pt;
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 869, main.scss */
+/* line 866, main.scss */
 #contact address .info ul .title {
   font-size: 12pt;
 }
 @media only screen and (max-width: 768px) {
-  /* line 864, main.scss */
+  /* line 861, main.scss */
   #contact address .info ul {
     font-size: 12pt;
   }
@@ -909,11 +908,11 @@ main#portfolio .category .team:hover dl {
 /* Lier, 15. 4. 2. 오후 11:10 ==============================================
    Sitemap
    ========================================================================== */
-/* line 885, main.scss */
+/* line 882, main.scss */
 #sitemap {
   text-align: center;
 }
-/* line 888, main.scss */
+/* line 885, main.scss */
 #sitemap a {
   padding: 10px;
   display: inline-block;
