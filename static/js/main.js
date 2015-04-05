@@ -10,7 +10,7 @@
                     $scope.tpls.header = 'template/header.tpl.html';
                     $scope.tpls.footer = 'template/footer.tpl.html';
 
-                    $scope.isProduction = ($location.host() == 'http://d3jubilee.com')
+                    $scope.isProduction = ($location.host() == 'd3jubilee.com')
                 }
             }
         })
