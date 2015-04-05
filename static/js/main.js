@@ -5,10 +5,12 @@
         .directive('main', function () {
             return {
                 restrict: 'E',
-                controller: function ($scope) {
+                controller: function ($scope, $location) {
                     $scope.tpls = {};
                     $scope.tpls.header = 'template/header.tpl.html';
                     $scope.tpls.footer = 'template/footer.tpl.html';
+
+                    $scope.isProduction = ($location.host() == 'http://d3jubilee.com')
                 }
             }
         })
