@@ -107,16 +107,17 @@
                     </div>
                 </div>
             </article>
-            <article>
-                <ul class="clearfix">
-                    <li class="col-md-3 col-sm-6 col-xs-6 team" data-ng-repeat="company in category.companies">
-                        <a data-ng-href="{{ company.url }}" target="_blank">
-                            <div class="box">
-                                <img data-ng-src="{{ company.logo }}" class="cover"/>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <article class="companies clearfix">
+              <h1>Portfolio</h1>
+              <ul data-ng-repeat="category in category.results">
+                <li class="col-md-3 col-sm-6 col-xs-6 team" data-ng-repeat="company in category.companies">
+                  <a data-ng-href="{{ company.url }}" target="_blank">
+                    <div class="box">
+                      <img data-ng-src="{{ company.logo }}" class="cover"/>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </article>
             <!--
             <article class="deals clearfix">

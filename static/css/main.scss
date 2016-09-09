@@ -434,6 +434,20 @@ main {
             }
         }
 
+        article.companies {
+          li {
+            margin-bottom: 15px;
+          }
+
+          img {
+            width: 100%;
+            max-width: 140px;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
         article.deals {
             .carousel-wrap {
                 max-width: 752px;
