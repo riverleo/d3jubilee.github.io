@@ -1,0 +1,261 @@
+{
+    "results": [
+        {
+            "title": {
+                "en": "Finance, Law",
+                "ko": "금융, 법률"
+            },
+            "companies": [
+                {
+                    "title": "희망을 만드는 사람들",
+                    "description": "만성적인 부채 탈출을 위한 밀착형 재무/심리상담",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/hopemaker.png",
+                    "url": "http://www.hopemaker.kr/"
+                },
+                {
+                    "title": "Lumni",
+                    "description": "가난한 대학생의 가능성에 투자하고 미래의 수입에서 회수하는 학자금투자 플랫폼",
+                    "locale": "콜롬비아, 멕시코, 칠레",
+                    "logo": "static/img/portfolio/lumni.png",
+                    "url": "http://www.lumni.net/"
+                },
+                {
+                    "title": "The Cheat",
+                    "description": "집단지성을 이용하여 온라인 사기 피해를 방지하는 서비스",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/thecheat.png",
+                    "url": "http://thecheat.co.kr/"
+                },
+                {
+                    "title": "로앤컴퍼니",
+                    "description": "법률 정보비대칭을 해결하고 법률사무소의 경영을 돕는 로펌 경영지원 서비스",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/law&company.png",
+                    "url": "http://lawcompany.co.kr/"
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Healthcare",
+                "ko": "헬스케어"
+            },
+            "companies": [
+                {
+                    "title": "Neofect",
+                    "description": "뇌졸중 환자를 위한 디지털 재활 솔루션",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/neofect.png",
+                    "url": "http://www.neofect.com/"
+                },
+                {
+                    "title": "Labdoor",
+                    "description": "영양보충제의 올바른 소비를 위한 과학적 분석 기반의 디지털 리포트",
+                    "locale": "미국",
+                    "logo": "static/img/portfolio/labdoor.png",
+                    "url": "https://labdoor.com/"
+                },
+                {
+                    "title": "Sevamob",
+                    "description": "인도의 저소득층 환자를 위한 정기회원제 기반의 방문진료 서비스      ",
+                    "locale": "인도",
+                    "logo": "static/img/portfolio/sevamob.png",
+                    "url": "http://sevamob.com/"
+                },
+                {
+                    "title": "Noom",
+                    "description": "올바른 식생활과 적절한 운동을 위한 건강관리 어플리케이션",
+                    "locale": "미국, 한국",
+                    "logo": "static/img/portfolio/noom.png",
+                    "url": "http://www.noom.co.kr/"
+                },
+                {
+                    "title": "dloHaiti",
+                    "description": "아이티공화국에서 깨끗하고 저렴한 식수를 보급하는 기업",
+                    "locale": "아이티공화국",
+                    "logo": "static/img/portfolio/diohaiti.png",
+                    "url": "http://www.dlohaiti.com/"
+                },
+                {
+                    "title": "Friendtrip",
+                    "description": "아웃도어 활동을 통해 건강한 경험과 지역경제 활성화를 돕는 소셜 플랫폼",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/frientrip.png",
+                    "url": "http://www.frientrip.co.kr/"
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Education",
+                "ko": "교육"
+            },
+            "companies": [
+                {
+                    "title": "LocoMotive Labs",
+                    "description": "아이들의 자율적 학습을 돕는 게이미피케이션 교육 소프트웨어",
+                    "locale": "미국, 한국",
+                    "logo": "static/img/portfolio/locomotive.png",
+                    "url": "http://locomotivelabs.com/"
+                },
+                {
+                    "title": "UClass(exit)",
+                    "description": "클라우드 방식으로 교육 커리큘럼을 체계적으로 저장/공유하는 플랫폼 서비스",
+                    "locale": "미국",
+                    "logo": "static/img/portfolio/uclass.png",
+                    "url": "http://www.uclass.io/"
+                },
+                {
+                    "title": "KnowRe",
+                    "description": "게이미피케이션과 개인 맞춤형 커리큘럼을 통해 수학 교육을 제공하는 교육소프트웨어 기업",
+                    "locale": "미국, 한국",
+                    "logo": "static/img/portfolio/knowre.png",
+                    "url": "http://www.knowre.com/"
+                },
+                {
+                    "title": "뮤지컬모비딕(partly exit)",
+                    "description": "배우들이 무대 위에서 노래, 연기뿐 아니라 연주를 담당하는 '액터-뮤지션 뮤지컬'",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/mobydick.png",
+                    "url": "http://www.musicalmobydick.com/"
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Energy, Environment",
+                "ko": "에너지, 환경"
+            },
+            "companies": [
+                {
+                    "title": "Sunfunder",
+                    "description": "크라우드 펀딩으로 개발도상국의 off-grid에 태양광발전을 설치해주는 플랫폼",
+                    "locale": "탄자니아, 케냐",
+                    "logo": "static/img/portfolio/sunfunder.jpg",
+                    "url": "http://sunfunder.com/"
+                },
+                {
+                    "title": "Root3",
+                    "description": "효율적인 에너지 관리를 돕는 크라우드 기반의 매니지먼트 소프트웨어를 제공하는 기업",
+                    "locale": "미국",
+                    "logo": "static/img/portfolio/root3.png",
+                    "url": "http://www.root3tech.com/"
+                },
+                {
+                    "title": "Enomad",
+                    "description": "흐르는 물을 통해 에너지가 없는 곳에 에너지와 새로운 문화를 만드는 휴대용 수류발전기 제조 벤처",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/enomad.png",
+                    "url": "http://www.energynomad.com/"
+                },
+                {
+                    "title": "TreePlanet",
+                    "description": "모든 사람들이 나무를 심을 수 잇는 가장 즐거운 방법",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/treeplanet.png",
+                    "url": "http://treepla.net/"
+                },
+                {
+                    "title": "Bring Your Cup",
+                    "description": "텀블러 사용으로 카페 이용 문화 혁신",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/bringyourcup.png",
+                    "url": "http://www.bringyourcup.co.kr/"
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Sharing Economy, Community",
+                "ko": "공유경제, 커뮤니티"
+            },
+            "companies": [
+                {
+                    "title": "국민도서관 책꽂이",
+                    "description": "공유경제 기반의 대안 도서관",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/bookoob.png",
+                    "url": "http://bookoob.co.kr/"
+                },
+                {
+                    "title": "Copia Global",
+                    "description": "지역상점을 통해 개발도상국의 저소득층들에게 저렴한 이커머스를 제공",
+                    "locale": "페루",
+                    "logo": "static/img/portfolio/copia.png",
+                    "url": "http://www.copiaglobal.com/"
+                },
+                {
+                    "title": "Ridepal",
+                    "description": "도로 정체와 불편한 대중교통의 대안으로서 저렴하고 편리한 통근용 버스를 운영",
+                    "locale": "미국",
+                    "logo": "static/img/portfolio/ridepal.png",
+                    "url": "http://www.ridepal.com/"
+                },
+                {
+                    "title": "Yerdle",
+                    "description": "자신에게 필요 없는 물건을 포스팅함으로써 필요한 사람에게 나눌 수 있는 플랫폼",
+                    "locale": "미국",
+                    "logo": "static/img/portfolio/yerdle.png",
+                    "url": "https://yerdle.com/"
+                },
+                {
+                    "title": "REBBL",
+                    "description": "양질의 유기농 허브 드링크를 판매하고 전세계 인신매매 근절 활동을 지지하는 소셜벤처",
+                    "locale": "미국, 페루",
+                    "logo": "static/img/portfolio/rebble.png",
+                    "url": "http://www.rebbltonic.com/"
+                },
+                {
+                    "title": "트래블러스맵",
+                    "description": "현지 사람들과 공정하게 거래하고, 환경영향을 최소화하며, 지역 문화를 존중하는 공정여행사",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/tmap.png",
+                    "url": "http://www.travelersmap.co.kr/"
+                },
+                {
+                    "title": "Verlocal",
+                    "description": "자신만의 특별한 경험을 공유할 수 있는 마켓플레이스",
+                    "locale": "미국",
+                    "logo": "static/img/portfolio/verlocal.png",
+                    "url": "https://www.verlocal.com"
+                },
+                {
+                    "title": "우주(exit)",
+                    "description": "함께하는 즐거움을 전파하는 셰어하우스",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/woozoo.png",
+                    "url": "http://www.woozoo.kr/"
+                },
+                {
+                    "title": "히쳐",
+                    "description": "차로 이동하는 운전자, 차가 없이 이동하는 탑승객을 연결하는 소셜 라이딩 서비스",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/hitcher.png",
+                    "url": "http://hitcher.cc/"
+                },
+                {
+                    "title": "그린카",
+                    "description": "본인이 필요한 만큼 집 근처에서 예약한 후 사용할 수 있는 카쉐어링",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/greencar.png",
+                    "url": "http://www.greencar.co.kr/"
+                },
+                {
+                    "title": "파킹클라우드",
+                    "description": "전통적 주차 산업을 혁신하는 웹/모바일 서비스",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/parkingcloud.png",
+                    "url": "http://www.parkingcloud.co.kr/"
+                },
+                {
+                    "title": "FromDL",
+                    "description": "희귀성 질환을 가진 환자와 부모의 소통과 공감을 위한 온라인 커뮤니티",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/fromdl.jpg",
+                    "url": "https://www.fromdl.com/"
+                }
+            ]
+        }
+    ]
+}

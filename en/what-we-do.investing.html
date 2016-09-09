@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="ko" data-ng-app="main">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>d3jubilee - What we do</title>
+    <meta name="description" content="Investing on a mission">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/screen.css"/>
+    <link rel="stylesheet" href="static/css/main.css"/>
+
+    <script src="//use.typekit.net/hmi5prq.js"></script>
+    <script>try {
+        Typekit.load();
+    } catch (e) {
+    }</script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<main id="what-we-do">
+    <div data-ng-include="tpls.header"></div>
+    <div class="container">
+        <header class="top visible-md visible-sm visible-lg">
+            <img src="static/img/invest.png" alt="invest" width="100%"/>
+        </header>
+        <div class="row">
+            <article class="col-xs-12 col-sm-6">
+                <h1>국내</h1>
+                <p>
+                    D3가 직접 투자하거나 D3+ 임팩트투자자 클럽 회원이 투자합니다.
+                    또한 엑셀러레이터 프로그램 (D3 임팩트엔진)을 통하여
+                    국내외 멘토를 연결하고 성장을 돕습니다.
+                </p>
+
+                <button class="btn btn-primary btn-lg visible-sm visible-md visible-lg" data-toggle="modal" data-target="#d3-plus">D3+</button>
+            </article>
+            <article class="col-xs-12 col-sm-6">
+                <h1>해외</h1>
+                <p>
+                    <!--D3 미국법인이 직접 투자하거나 별도의 법인을 통하여 투자합니다.-->
+                    미국 등 선진 국가와 남미, 아프리카, 인도 등 저소득 국가에서
+                    사회환경적 가치가 높은 ICT 스타트업들을 발굴하여 투자합니다.
+                </p>
+            </article>
+        </div>
+    </div>
+    <div data-ng-include="tpls.footer"></div>
+</main>
+
+<!--Modal-->
+<div id="d3-plus" class="invest modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h1 class="hero">D3+</h1>
+            <p>
+                D3+는 엔젤투자지원센터에 등록된 회원제 임팩트투자자클럽으로 회원들에게 사회혁신 벤처를
+                소개하고 회원들을 위한 다양한 세미나를 개최하며 국내외 임팩트 투자 동향 및 정보를
+                제공합니다.
+            </p>
+            <h2>D3+ 투자클럽 가입 절차</h2>
+            <div class="text-center">
+                <img src="static/img/d3+.png" alt="D3+ 투자클럽 가입 절차" width="90%"/>
+                <div class="process row text-center">
+                    <div class="col-sm-4 col-xs-12">1. 엔젤투자지원센터 회원가입</div>
+                    <div class="col-sm-4 col-xs-12">2. D3+ 임팩트투자클럽 회원가입</div>
+                    <div class="col-sm-4 col-xs-12">3. 가입 승인 / 연회비 납부</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="static/js/vendor/angular.min.js"></script>
+<script src="static/js/vendor/angular-resource.min.js"></script>
+<script src="static/js/vendor/bootstrap.min.js"></script>
+<script src="static/js/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script>
+<script src="static/js/plugins.js"></script>
+<script src="static/js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
