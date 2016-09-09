@@ -16,6 +16,7 @@
         })
         .controller('HomeController', function ($scope, $resource) {
             $scope.features = $resource('static/json/feature.json').get();
+            $scope.category = $resource('static/json/category.json').get();
         })
         .controller('PortfolioController', function ($scope, $resource) {
             $scope.category = $resource('static/json/category.json').get();
