@@ -34,13 +34,13 @@
         <header class="minor">
             <h1 class="hero text-center">Gap-closing / Diverse / Sustainable</h1>
             <!--<h2 class="text-center">D3는 그동안 주목받지 못한 사람들의 삶을 개선하고 환경을 살리는 기업에 투자합니다.</h2>-->
-            <img src="static/img/portfolio.png" width="100%" alt="포트폴리오"/>
+            <img src="static/img/portfolio.png" width="100%" alt="Portfolio"/>
         </header>
         <ul class="category" data-ng-repeat="category in category.results">
             <li class="clearfix">
                 <dl class="preview col-sm-3">
                     <dt>{{ category.title.en }}</dt>
-                    <dd>{{ category.title.ko }}</dd>
+                    <dd></dd>
                 </dl>
                 <ul class="col-sm-9">
                     <li class="col-md-3 col-sm-6 col-xs-6 team" data-ng-repeat="company in category.companies">
@@ -60,12 +60,13 @@
                 </ul>
             </li>
         </ul>
+        <p style="text-align: center; margin-top: 36px; font-size: 20px;">Exit: Bring Your Cup, Green Car, Root3, UClass, WooZoo, musical mobydick (6 companies)</p>
     </div>
     <div data-ng-include="tpls.footer"></div>
 </main>
 
 <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="static/js/vendor/jquery-1.11.2.min.js"></script>
 <script src="static/js/vendor/angular.min.js"></script>
 <script src="static/js/vendor/angular-resource.min.js"></script>
 <script src="static/js/vendor/bootstrap.min.js"></script>

@@ -14,13 +14,6 @@
                     "url": "http://www.hopemaker.kr/"
                 },
                 {
-                    "title": "Lumni",
-                    "description": "가난한 대학생의 가능성에 투자하고 미래의 수입에서 회수하는 학자금투자 플랫폼",
-                    "locale": "콜롬비아, 멕시코, 칠레",
-                    "logo": "static/img/portfolio/lumni.png",
-                    "url": "http://www.lumni.net/"
-                },
-                {
                     "title": "The Cheat",
                     "description": "집단지성을 이용하여 온라인 사기 피해를 방지하는 서비스",
                     "locale": "한국",
@@ -33,6 +26,13 @@
                     "locale": "한국",
                     "logo": "static/img/portfolio/law&company.png",
                     "url": "http://lawcompany.co.kr/"
+                },
+                {
+                    "title": "People Fund",
+                    "description": "모든 대출 과정을 자동화하여 불필요한 경비지출을 최소화한 은행 협업형 P2P 대출 서비스",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/peoplefund.png",
+                    "url": "https://www.peoplefund.co.kr"
                 }
             ]
         },
@@ -83,6 +83,41 @@
                     "locale": "한국",
                     "logo": "static/img/portfolio/frientrip.png",
                     "url": "http://www.frientrip.co.kr/"
+                },
+                {
+                    "title": "WhiteCoat",
+                    "description": "보다 저렴하게, 언제, 어디서나 접근 가능한, 집으로 찾아가는 의료 서비스",
+                    "locale": "미국",
+                    "logo": "static/img/portfolio/whitecoat.png",
+                    "url": "https://www.getwhitecoat.com/"
+                },
+                {
+                    "title": "스피링크",
+                    "description": "모바일에서 언제, 어디서든, 쉽고 간편하게 전문 심리 상담사와 익명으로 메시지를 주고 받으면서 심리분석도구를 제공받는 심리 테라피 서비스",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/spirink.png",
+                    "url": "http://souling.co.kr/"
+                },
+                {
+                    "title": "ExplORer",
+                    "description": "수술실 안에서 벌어지는 업무 프로세스 및 준비사항들을 표준화하고 수술팀 간에 커뮤니케이션을 정확하고 효율적으로 할 수 있도록 돕는 태블릿 기반의 서비스",
+                    "locale": "미국",
+                    "logo": "static/img/portfolio/explorer.png",
+                    "url": "http://explorersurgical.com/"
+                },
+                {
+                    "title": "프라미솝",
+                    "description": "희귀성 질환을 가진 환자와 부모의 소통과 공감을 위한 온라인 커뮤니티",
+                    "locale": "한국",
+                    "logo": "static/img/portfolio/promisope.png",
+                    "url": "https://www.fromdl.com/"
+                },
+                {
+                    "title": "Ovitz",
+                    "description": "사용하기 쉬운 고성능 휴대용 검안기와 솔루션을 통해 사회적 취약계층 및 개발도상국 주민들에게 적합한 vision care를 제공하는 회사",
+                    "locale": "한국, 미국",
+                    "logo": "static/img/portfolio/ovitz.png",
+                    "url": ""
                 }
             ]
         },
@@ -93,18 +128,11 @@
             },
             "companies": [
                 {
-                    "title": "LocoMotive Labs",
+                    "title": "Enuma",
                     "description": "아이들의 자율적 학습을 돕는 게이미피케이션 교육 소프트웨어",
                     "locale": "미국, 한국",
-                    "logo": "static/img/portfolio/locomotive.png",
+                    "logo": "static/img/portfolio/enuma.png",
                     "url": "http://locomotivelabs.com/"
-                },
-                {
-                    "title": "UClass(exit)",
-                    "description": "클라우드 방식으로 교육 커리큘럼을 체계적으로 저장/공유하는 플랫폼 서비스",
-                    "locale": "미국",
-                    "logo": "static/img/portfolio/uclass.png",
-                    "url": "http://www.uclass.io/"
                 },
                 {
                     "title": "KnowRe",
@@ -114,11 +142,18 @@
                     "url": "http://www.knowre.com/"
                 },
                 {
-                    "title": "뮤지컬모비딕(partly exit)",
-                    "description": "배우들이 무대 위에서 노래, 연기뿐 아니라 연주를 담당하는 '액터-뮤지션 뮤지컬'",
-                    "locale": "한국",
-                    "logo": "static/img/portfolio/mobydick.png",
-                    "url": "http://www.musicalmobydick.com/"
+                    "title": "Eneza",
+                    "description": "웹, 스마트폰, 그리고 문자메세지를 통해서 개인별로 맞춤식 교육 컨텐츠를 저렴한 가격으로 제공하는 모바일 에듀테크 회사",
+                    "locale": "케냐",
+                    "logo": "static/img/portfolio/eneza.png",
+                    "url": "http://enezaeducation.com"
+                },
+                {
+                    "title": "뤼이드",
+                    "description": "진단테스트를 통해 취약 유형을 정확히 파악하고 필요한 문제를 골라 최단기간에 목표를 달성시켜주는 어댑티브 러닝 플랫폼",
+                    "locale": "Korea",
+                    "logo": "static/img/portfolio/ruiiid.png",
+                    "url": "http://santatoeic.co"
                 }
             ]
         },
@@ -136,13 +171,6 @@
                     "url": "http://sunfunder.com/"
                 },
                 {
-                    "title": "Root3",
-                    "description": "효율적인 에너지 관리를 돕는 크라우드 기반의 매니지먼트 소프트웨어를 제공하는 기업",
-                    "locale": "미국",
-                    "logo": "static/img/portfolio/root3.png",
-                    "url": "http://www.root3tech.com/"
-                },
-                {
                     "title": "Enomad",
                     "description": "흐르는 물을 통해 에너지가 없는 곳에 에너지와 새로운 문화를 만드는 휴대용 수류발전기 제조 벤처",
                     "locale": "한국",
@@ -155,13 +183,6 @@
                     "locale": "한국",
                     "logo": "static/img/portfolio/treeplanet.png",
                     "url": "http://treepla.net/"
-                },
-                {
-                    "title": "Bring Your Cup",
-                    "description": "텀블러 사용으로 카페 이용 문화 혁신",
-                    "locale": "한국",
-                    "logo": "static/img/portfolio/bringyourcup.png",
-                    "url": "http://www.bringyourcup.co.kr/"
                 }
             ]
         },
@@ -184,13 +205,6 @@
                     "locale": "페루",
                     "logo": "static/img/portfolio/copia.png",
                     "url": "http://www.copiaglobal.com/"
-                },
-                {
-                    "title": "Ridepal",
-                    "description": "도로 정체와 불편한 대중교통의 대안으로서 저렴하고 편리한 통근용 버스를 운영",
-                    "locale": "미국",
-                    "logo": "static/img/portfolio/ridepal.png",
-                    "url": "http://www.ridepal.com/"
                 },
                 {
                     "title": "Yerdle",
@@ -221,27 +235,6 @@
                     "url": "https://www.verlocal.com"
                 },
                 {
-                    "title": "우주(exit)",
-                    "description": "함께하는 즐거움을 전파하는 셰어하우스",
-                    "locale": "한국",
-                    "logo": "static/img/portfolio/woozoo.png",
-                    "url": "http://www.woozoo.kr/"
-                },
-                {
-                    "title": "히쳐",
-                    "description": "차로 이동하는 운전자, 차가 없이 이동하는 탑승객을 연결하는 소셜 라이딩 서비스",
-                    "locale": "한국",
-                    "logo": "static/img/portfolio/hitcher.png",
-                    "url": "http://hitcher.cc/"
-                },
-                {
-                    "title": "그린카",
-                    "description": "본인이 필요한 만큼 집 근처에서 예약한 후 사용할 수 있는 카쉐어링",
-                    "locale": "한국",
-                    "logo": "static/img/portfolio/greencar.png",
-                    "url": "http://www.greencar.co.kr/"
-                },
-                {
                     "title": "파킹클라우드",
                     "description": "전통적 주차 산업을 혁신하는 웹/모바일 서비스",
                     "locale": "한국",
@@ -249,11 +242,11 @@
                     "url": "http://www.parkingcloud.co.kr/"
                 },
                 {
-                    "title": "FromDL",
-                    "description": "희귀성 질환을 가진 환자와 부모의 소통과 공감을 위한 온라인 커뮤니티",
-                    "locale": "한국",
-                    "logo": "static/img/portfolio/fromdl.jpg",
-                    "url": "https://www.fromdl.com/"
+                    "title": "Labor Voices",
+                    "description": "Glassdoor의 개발도상국형 모델로 근로자들로부터 크라우드 소싱된 리뷰를 바탕으로 Supply chain에 대한 데이터를 제공하는 플랫폼",
+                    "locale": "방글라데시, 터키",
+                    "logo": "static/img/portfolio/laborvoices.png",
+                    "url": "http://www.laborvoices.com/"
                 }
             ]
         }
