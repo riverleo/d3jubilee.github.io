@@ -371,6 +371,12 @@ main {
         }
 
         article.areas {
+          text-align: center;
+
+          dl {
+            float: initial;
+            display: inline-block;
+          }
             @include respond-to(mobile) {
                 dl {
                     height: 200px;
@@ -383,7 +389,7 @@ main {
             }
 
             .illust {
-                height: 100px;
+                height: 140px;
                 margin-top: 20px;
                 background-repeat: no-repeat;
                 background-position: center;
