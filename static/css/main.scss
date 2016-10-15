@@ -588,6 +588,19 @@ main#about-us {
       }
     }
 
+    ul {
+      li {
+        padding-left: 14px;
+        position: relative;
+
+        &:before {
+          content: '-';
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+
     button {
       min-width: 100px;
       padding: 10px 15px;
