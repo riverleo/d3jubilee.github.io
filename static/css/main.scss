@@ -627,7 +627,9 @@ main#about-us {
 
   #why-d3 {
     article {
-      padding: 0 40px;
+      @include respond-to(desktop) {
+        padding: 0 40px;
+      }
     }
   }
 }

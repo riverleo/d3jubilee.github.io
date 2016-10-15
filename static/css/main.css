@@ -655,48 +655,50 @@ main#about-us article button:hover {
     padding-left: 50px;
   }
 }
-/* line 629, main.scss */
-main#about-us #why-d3 article {
-  padding: 0 40px;
+@media only screen and (min-width: 769px) {
+  /* line 629, main.scss */
+  main#about-us #why-d3 article {
+    padding: 0 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 636, main.scss */
+  /* line 638, main.scss */
   .modal .modal-dialog {
     min-width: 860px;
   }
 }
-/* line 641, main.scss */
+/* line 643, main.scss */
 .modal .modal-dialog .modal-content {
   padding: 50px;
   box-shadow: none;
   border-radius: 0;
 }
-/* line 646, main.scss */
+/* line 648, main.scss */
 .modal .modal-dialog .modal-content p {
   margin-top: 40px;
   line-height: 1.4;
 }
-/* line 651, main.scss */
+/* line 653, main.scss */
 .modal .modal-dialog .modal-content h2 {
   margin-top: 100px;
 }
-/* line 655, main.scss */
+/* line 657, main.scss */
 .modal .modal-dialog .modal-content img {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* line 659, main.scss */
+/* line 661, main.scss */
 .modal .modal-dialog .modal-content .name {
   font-size: 12pt;
 }
-/* line 663, main.scss */
+/* line 665, main.scss */
 .modal .modal-dialog .modal-content .career {
   color: #999;
   font-size: 10pt;
   margin-top: 6px;
 }
-/* line 669, main.scss */
+/* line 671, main.scss */
 .modal .modal-dialog .modal-content .process {
   margin-top: 40px;
 }
@@ -705,71 +707,71 @@ main#about-us #why-d3 article {
 Team
 ========================================================================== */
 @media only screen and (min-width: 769px) {
-  /* line 682, main.scss */
+  /* line 684, main.scss */
   main#team article:first-child {
     padding-right: 50px;
     border-right: 1px solid #f1f1f1;
   }
-  /* line 687, main.scss */
+  /* line 689, main.scss */
   main#team article:last-child {
     padding-left: 50px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 693, main.scss */
+  /* line 695, main.scss */
   main#team article:last-child {
     border-top: 1px solid #f1f1f1;
   }
 }
-/* line 698, main.scss */
+/* line 700, main.scss */
 main#team article {
   padding: 80px 0;
 }
-/* line 702, main.scss */
+/* line 704, main.scss */
 main#team article header img {
   width: 150px;
   height: 150px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 702, main.scss */
+  /* line 704, main.scss */
   main#team article header img {
     width: 120px;
     height: 120px;
   }
 }
-/* line 711, main.scss */
+/* line 713, main.scss */
 main#team article header dl {
   margin: 100px 0 0 15px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 711, main.scss */
+  /* line 713, main.scss */
   main#team article header dl {
     margin: 70px 0 0 15px;
   }
 }
-/* line 718, main.scss */
+/* line 720, main.scss */
 main#team article header dl dt {
   font-size: 18pt;
   font-weight: bold;
 }
-/* line 723, main.scss */
+/* line 725, main.scss */
 main#team article header dl dd {
   margin-top: 6px;
   font-size: 14pt;
   color: #979797;
 }
-/* line 731, main.scss */
+/* line 733, main.scss */
 main#team article .intro {
   margin-top: 80px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 731, main.scss */
+  /* line 733, main.scss */
   main#team article .intro {
     margin-top: 20px;
     text-align: justify;
   }
 }
-/* line 739, main.scss */
+/* line 741, main.scss */
 main#team article .intro p {
   line-height: 1.6;
   font-size: 11pt;
@@ -779,31 +781,31 @@ main#team article .intro p {
 /* Lier, 15. 3. 19. 오전 2:39 ==============================================
 Jobs
 ========================================================================== */
-/* line 752, main.scss */
+/* line 754, main.scss */
 #jobs {
   padding: 80px 0 160px 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 755, main.scss */
+  /* line 757, main.scss */
   #jobs .hero {
     margin-top: 40px;
   }
 }
-/* line 760, main.scss */
+/* line 762, main.scss */
 #jobs .intro {
   margin-top: 40px;
 }
-/* line 764, main.scss */
+/* line 766, main.scss */
 #jobs h2 {
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 6px;
 }
-/* line 770, main.scss */
+/* line 772, main.scss */
 #jobs .warning {
   margin-top: 80px;
 }
-/* line 774, main.scss */
+/* line 776, main.scss */
 #jobs address {
   margin-top: 40px;
 }
@@ -811,54 +813,54 @@ Jobs
 /* Lier, 15. 3. 19. 오전 2:53 ==============================================
 Portfolio
 ========================================================================== */
-/* line 783, main.scss */
+/* line 785, main.scss */
 #portfolio {
   padding: 80px 0 160px 0;
 }
-/* line 786, main.scss */
+/* line 788, main.scss */
 #portfolio header.minor {
   margin-top: 40px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 790, main.scss */
+  /* line 792, main.scss */
   #portfolio header.minor .hero {
     font-size: 24pt;
   }
 }
-/* line 795, main.scss */
+/* line 797, main.scss */
 #portfolio header.minor h2 {
   margin-top: 20px;
 }
-/* line 799, main.scss */
+/* line 801, main.scss */
 #portfolio header.minor img {
   margin-top: 40px;
 }
-/* line 804, main.scss */
+/* line 806, main.scss */
 #portfolio .category {
   margin-top: 80px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 807, main.scss */
+  /* line 809, main.scss */
   #portfolio .category dl.preview {
     margin-bottom: 20px;
   }
 }
-/* line 812, main.scss */
+/* line 814, main.scss */
 #portfolio .category dl.preview dt {
   font-size: 18pt;
   font-family: 'fira-sans-2', sans-serif;
   color: #55ad8a;
 }
-/* line 818, main.scss */
+/* line 820, main.scss */
 #portfolio .category dl.preview dd {
   font-size: 12pt;
   margin-top: 10px;
 }
-/* line 824, main.scss */
+/* line 826, main.scss */
 #portfolio .category .team {
   padding: 10px;
 }
-/* line 827, main.scss */
+/* line 829, main.scss */
 #portfolio .category .team .box {
   width: 100%;
   height: 100%;
@@ -866,7 +868,7 @@ Portfolio
   padding: 20px;
   position: relative;
 }
-/* line 834, main.scss */
+/* line 836, main.scss */
 #portfolio .category .team .box dl {
   top: -10px;
   left: -10px;
@@ -882,25 +884,25 @@ Portfolio
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-/* line 846, main.scss */
+/* line 848, main.scss */
 #portfolio .category .team .box dl dt {
   color: white;
   font-size: 14pt;
 }
-/* line 851, main.scss */
+/* line 853, main.scss */
 #portfolio .category .team .box dl dd {
   font-size: 11pt;
   line-height: 1.4;
 }
-/* line 858, main.scss */
+/* line 860, main.scss */
 #portfolio .category .team .cover {
   width: 100%;
 }
-/* line 865, main.scss */
+/* line 867, main.scss */
 #portfolio .category .team:hover dl {
   opacity: 1;
 }
-/* line 870, main.scss */
+/* line 872, main.scss */
 #portfolio .category .summary {
   text-align: center;
   margin-top: 36px;
@@ -910,15 +912,15 @@ Portfolio
 /* Lier, 15. 3. 19. 오전 3:32 ==============================================
 Contact
 ========================================================================== */
-/* line 882, main.scss */
+/* line 884, main.scss */
 #contact {
   padding: 80px 0 160px 0;
 }
-/* line 886, main.scss */
+/* line 888, main.scss */
 #contact header.minor .hero {
   margin: 40px 0;
 }
-/* line 890, main.scss */
+/* line 892, main.scss */
 #contact header.minor a {
   display: inline-block;
   margin-top: 40px;
@@ -926,45 +928,45 @@ Contact
   color: #4d4d4d;
   border: 1px solid #4d4d4d;
 }
-/* line 898, main.scss */
+/* line 900, main.scss */
 #contact header.minor a:hover {
   color: #16968a;
   border: 1px solid #16968a;
 }
-/* line 903, main.scss */
+/* line 905, main.scss */
 #contact header.minor p {
   margin-bottom: 10px;
 }
-/* line 908, main.scss */
+/* line 910, main.scss */
 #contact address {
   margin-top: 100px;
 }
-/* line 911, main.scss */
+/* line 913, main.scss */
 #contact address .map {
   height: 400px;
 }
-/* line 915, main.scss */
+/* line 917, main.scss */
 #contact address .info {
   padding: 0 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 915, main.scss */
+  /* line 917, main.scss */
   #contact address .info {
     margin-top: 20px;
   }
 }
-/* line 922, main.scss */
+/* line 924, main.scss */
 #contact address .info ul {
   padding: 20px 0;
   font-size: 10pt;
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 927, main.scss */
+/* line 929, main.scss */
 #contact address .info ul .title {
   font-size: 12pt;
 }
 @media only screen and (max-width: 768px) {
-  /* line 922, main.scss */
+  /* line 924, main.scss */
   #contact address .info ul {
     font-size: 12pt;
   }
@@ -973,11 +975,11 @@ Contact
 /* Lier, 15. 4. 2. 오후 11:10 ==============================================
 Sitemap
 ========================================================================== */
-/* line 943, main.scss */
+/* line 945, main.scss */
 #sitemap {
   text-align: center;
 }
-/* line 946, main.scss */
+/* line 948, main.scss */
 #sitemap a {
   padding: 10px;
   display: inline-block;
