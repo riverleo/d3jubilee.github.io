@@ -190,7 +190,7 @@ header.major {
         }
 
         ul.internal {
-            margin-right: 74px;
+            margin-right: 150px;
 
             li {
                 padding: 30px 25px;
@@ -201,6 +201,7 @@ header.major {
                     left: 10px;
                     opacity: 0;
                     position: absolute;
+                    white-space: nowrap;
 
                     li {
                         padding: 10px 15px;
@@ -371,6 +372,12 @@ main {
         }
 
         article.areas {
+          text-align: center;
+
+          dl {
+            float: initial;
+            display: inline-block;
+          }
             @include respond-to(mobile) {
                 dl {
                     height: 200px;
@@ -383,7 +390,7 @@ main {
             }
 
             .illust {
-                height: 100px;
+                height: 140px;
                 margin-top: 20px;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -428,6 +435,20 @@ main {
             }
         }
 
+        article.companies {
+          li {
+            margin-bottom: 15px;
+          }
+
+          img {
+            width: 100%;
+            max-width: 140px;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
         article.deals {
             .carousel-wrap {
                 max-width: 752px;
@@ -518,14 +539,18 @@ main {
    What We Do
    ========================================================================== */
 
-main#what-we-do {
+main#about-us {
     header.top {
         margin-top: 40px;
     }
 
+    .container .row:last-child {
+      margin-bottom: 100px;
+    }
+
     article {
         @include respond-to(desktop) {
-            margin: 100px 0;
+            margin: 100px 0 0;
         }
 
         @include respond-to(mobile) {
@@ -815,6 +840,12 @@ main#team {
             dl {
                 opacity: 1;
             }
+        }
+
+        .summary {
+          text-align: center;
+          margin-top: 36px;
+          font-size: 20px;
         }
     }
 }
