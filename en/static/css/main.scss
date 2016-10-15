@@ -536,7 +536,7 @@ main {
 }
 
 /* Lier, 15. 3. 19. 오전 12:28 ==============================================
-What We Do
+About Us
 ========================================================================== */
 
 main#about-us {
@@ -608,6 +608,14 @@ main#about-us {
   }
 
   @include respond-to(desktop) {
+    article {
+      border-right: $border-style;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
     article:nth-child(1) {
       padding-right: 50px;
     }
@@ -615,9 +623,11 @@ main#about-us {
     article:nth-child(2) {
       padding-left: 50px;
     }
+  }
 
-    article:nth-child(2) {
-      border-left: $border-style;
+  #why-d3 {
+    article {
+      padding: 0 40px;
     }
   }
 }
