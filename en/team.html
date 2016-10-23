@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="" data-ng-app="main">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>d3jubilee - Team</title>
@@ -17,83 +17,84 @@
     <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="//use.typekit.net/hmi5prq.js"></script>
     <script>try {
-        Typekit.load();
+      Typekit.load();
     } catch (e) {
     }</script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script>
-        var map;
-        function initialize() {
-            var mapOptions = {
-                zoom: 16,
-                center: new google.maps.LatLng(37.507938, 127.045097)
-            };
-            var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script>
+    var map;
+    function initialize() {
+      var mapOptions = {
+        zoom: 16,
+        center: new google.maps.LatLng(37.507938, 127.045097)
+      };
+      var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                    mapOptions);
 
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(37.507938, 127.045097),
-                map: map,
-                title: 'Hello World!'
-            });
-        }
+                                    var marker = new google.maps.Marker({
+                                      position: new google.maps.LatLng(37.507938, 127.045097),
+                                      map: map,
+                                      title: 'Hello World!'
+                                    });
+    }
 
-        google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, 'load', initialize);
 
-    </script>
+  </script>
 </head>
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+      your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-<!-- Add your site or application content here -->
-<main id="team">
+  <!-- Add your site or application content here -->
+  <main id="team">
     <div data-ng-include="tpls.header"></div>
     <div class="container">
-        <article class="man col-sm-6">
-            <header class="clearfix">
-                <img src="static/img/mentor/doug.png" class="pull-left" alt="이덕준 대표"/>
-                <dl class="pull-left">
-                    <dt>Duckjun Lee</dt>
-                    <dd>CEO</dd>
-                </dl>
-            </header>
-            <div class="intro">
-                <p>
-                   Upon graduation from Seoul National University in 1987, Duckjun started his career in a NPO sector mainly around supporting the rights for underprivileged people. He served as a community activist for the residents in a shantytown in Seoul and lived with them. He also worked as a policy administrator for Citizens’ coalition for Economic justice, one of the best known NGOs in Korea. 
-                </p>
-                <p>
-                   Following his three years at a NPO, he turned into a credit analyst in the early 1990’s and his career in the financial industry began. After earning his master’s degree in the Accounting/Finance from London School of Economics and Political Science, he worked for global investment banks such as Shroeder, Citi group and Credit Swiss. In 2005, he joined Gmarket as a CFO. Thereafter, he experienced a lifecycle of a venture firm through a series of events including Gmarket’s strategic stake sale to Yahoo, IPO at NASDAQ and M&A with eBay. 
-                </p>
-                <p>
-                   In 2010, he resigned from CFO at Gmarket post merger with eBay and started angel investments in Silicon Valley. Gradually he sought more than mere financial returns from his investment activities and then he joined activities of the global impact investors such as Toniic in San Francisco Bay areas. In 2011, he founded D3 to pioneer the impact investment in Korea and in the following year, opened an office in San Francisco to expand presence in the global impact investment field. 
-                </p>
-                <p>
-                  Currently he lives in Palo Alto with his family and oversees D3’s activities in Korea.
-                </p>
-            </div>
-        </article>
-        <article class="man col-sm-6">
-            <header class="clearfix">
-                <img src="static/img/mentor/young.png" class="pull-left" width="150px" alt="이덕준 대표"/>
-                <dl class="pull-left">
-                    <dt>Jiyoung Lee</dt>
-                    <dd>Principal</dd>
-                </dl>
-            </header>
-            <div class="intro">
-                <p>
-                   With a firm belief that finance is the most powerful driver of the society, Jiyoung majored in statistics and took a series of courses in business administration at Korea University. Upon graduation, she joined Kookmin bank, the largest bank in Korea, where she experienced a range of tasks in both retail and corporate banking businesses. After 4 years with Kookmin Bank, she embarked on a new journey to broaden her horizon by starting the MBA program at the University of Chicago Booth business school. Her interest in financial engineering led her to begin a post-MBA career at Equity derivative product team in Merrill Lynch Hong Kong. She also worked for Goldman Sachs Asset Management, building macro perspectives on the financial world. With her ambition of making the world better unfulfilled, she moved to Silicon Valley. 
-                </p>
-                <p>
-                   In Silicon Valley, the global hub of startups, she learned about venture firms generating positive impacts and gained hands-on experiences in the startup ecosystem by working for Zero Desktop, a cloud platform venture, and founding an online lifestyle sharing platform/marketplace, Nadoo. While she was planning for the next stage of her business, she met Duckjun. Then, she decided to join D3 with the conviction that the impact investment would pave a new path for the role of finance and her backgrounds in the finance industry and startup world would be a valuable asset for her new role. 
-                </p>
-            </div>
-        </article>
-    </div>
-    <div data-ng-include="tpls.footer"></div>
+      <article class="man col-sm-6">
+        <header class="clearfix">
+          <img src="static/img/mentor/doug.png" class="pull-left" alt="이덕준 대표"/>
+          <dl class="pull-left">
+            <dt>Duckjun Lee</dt>
+            <dd>CEO</dd>
+          </dl>
+        </header>
+        <div class="intro">
+          <p>
+            Upon graduation from Seoul National University in 1987, Duckjun started his career in a NPO sector mainly around supporting the rights for underprivileged people. He served as a community activist for the residents in a shantytown in Seoul and lived with them. He also worked as a policy administrator for Citizens’ coalition for Economic justice, one of the best known NGOs in Korea. 
+          </p>
+          <p>
+            Following his three years at a NPO, he turned into a credit analyst in the early 1990’s and his career in the financial industry began. After earning his master’s degree in the Accounting/Finance from London School of Economics and Political Science, he worked for global investment banks such as Shroeder, Citi group and Credit Swiss. In 2005, he joined Gmarket as a CFO. Thereafter, he experienced a lifecycle of a venture firm through a series of events including Gmarket’s strategic stake sale to Yahoo, IPO at NASDAQ and M&A with eBay. 
+          </p>
+          <p>
+            In 2010, he resigned from CFO at Gmarket post merger with eBay and started angel investments in Silicon Valley. Gradually he sought more than mere financial returns from his investment activities and then he joined activities of the global impact investors such as Toniic in San Francisco Bay areas. In 2011, he founded D3 to pioneer the impact investment in Korea and in the following year, opened an office in San Francisco to expand presence in the global impact investment field. 
+          </p>
+          <p>
+            Currently he lives in Palo Alto with his family and oversees D3’s activities in Korea.
+          </p>
+        </div>
+      </article>
+      <article class="man col-sm-6">
+        <header class="clearfix">
+          <img src="static/img/mentor/young.png" class="pull-left" width="150px" alt="이덕준 대표"/>
+          <dl class="pull-left">
+            <dt>Jiyoung Lee</dt>
+            <dd>Principal</dd>
+          </dl>
+        </header>
+        <div class="intro">
+          <p>
+            With a firm belief that finance is the most powerful driver of the society, Jiyoung studied statistics and business at Korea University. Upon graduation, she joined Kookmin bank, the largest bank in Korea, where she experienced a wide range of tasks in both retail and corporate banking businesses. After 4 years with Kookmin Bank, she started the MBA program at the University of Chicago Booth School of Business to broaden her horizon. Her interest in financial engineering led her to begin a post-MBA career at Structured Product Group in Merrill Lynch Hong Kong. She also worked for Goldman Sachs Asset Management, building macro perspectives on the financial world. With her ambition of making the world better unfulfilled, she moved to Silicon Valley in 2011.
+          </p>
+
+          <p>
+            In Silicon Valley, the global hub of startups, she learned about venture firms generating positive impacts and gained hands-on experiences in the startup ecosystem by working for Zero Desktop, a cloud platform venture, and founding an online lifestyle sharing platform/marketplace, NADOO. After she met Doug, she realized impact investing is where she can leverage her previous financial background and entrepreneurial experiences while making impact. In 2014, she joined D3 and have been participating to create meaningful impact to the society since then.
+        </p>
+      </div>
+    </article>
+  </div>
+  <div data-ng-include="tpls.footer"></div>
 </main>
 
 <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -107,20 +108,20 @@
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
-    (function (b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function () {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X', 'auto');
-    ga('send', 'pageview');
+  (function (b, o, i, l, e, r) {
+    b.GoogleAnalyticsObject = l;
+    b[l] || (b[l] =
+             function () {
+               (b[l].q = b[l].q || []).push(arguments)
+             });
+             b[l].l = +new Date;
+             e = o.createElement(i);
+             r = o.getElementsByTagName(i)[0];
+             e.src = '//www.google-analytics.com/analytics.js';
+             r.parentNode.insertBefore(e, r)
+  }(window, document, 'script', 'ga'));
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
 </script>
 </body>
 </html>
