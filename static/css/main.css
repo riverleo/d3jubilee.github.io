@@ -320,6 +320,17 @@ main header.spot dl dd {
   margin-top: 20px;
   line-height: 1.4;
 }
+main header.spot .notice {
+  border: 1px solid white;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main header.spot .notice .notice-body {
+  margin-bottom: 20px;
+}
+main header.spot .notice a {
+  text-decoration: underline;
+}
 /* line 313, main.scss */
 main section {
   background-position: top;
